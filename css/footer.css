@@ -1,5 +1,135 @@
-/* footer */
+footer {
+  color: #fff;
+  background: #192939;
+  padding: 120px 0 134px;
+}
+footer .logo {
+  max-width: 353px;
+  width: 100%;
+}
+footer .box-information {
+  margin: 48px 0 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  line-height: 14px;
+  max-width: 340px;
+}
+footer .box-information p {
+  margin: 0 0 10px;
+}
+footer .box-information p:last-child {
+  margin: 0;
+}
 
+.list-messengers-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-messengers-column li {
+  margin: 0 0 24px;
+}
+.list-messengers-column li:last-child {
+  margin: 0;
+}
+.list-messengers-column li a {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  fill: #fff;
+  padding: 10px;
+  background: #6ac1ef;
+}
+.list-messengers-column li a:hover {
+  background: #192939;
+  fill: #fff;
+}
+.list-messengers-column li a:focus {
+  background: #e4ecf3;
+  fill: #192939;
+}
+.list-messengers-column li a:disabled {
+  opacity: 0.5;
+  fill: #fff;
+  background: #6ac1ef;
+}
 
+.footer-column {
+  max-width: 353px;
+  width: 100%;
+  margin: 0 auto 0 0;
+}
 
-/* footer end */
+.menu-documents {
+  margin: 0 auto;
+  max-width: 307px;
+  width: 100%;
+}
+.menu-documents__item {
+  margin: 0 0 24px;
+}
+.menu-documents__item:last-child {
+  margin: 0;
+}
+.menu-documents__link {
+  text-decoration: underline;
+  color: #6ac1ef;
+}
+.menu-documents__link:hover, .menu-documents__link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-footer {
+  max-width: 202px;
+  width: 100%;
+}
+.menu-footer__item {
+  margin: 0 0 16px;
+}
+.menu-footer__item:last-child {
+  margin: 0;
+}
+.menu-footer__link {
+  color: #fff;
+}
+.menu-footer__link:hover, .menu-footer__link:focus {
+  color: #6ac1ef;
+}
+
+.footer-contacts {
+  margin: 0 auto;
+}
+
+.footer-contacts-item {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 4%;
+  margin: 0 0 16px;
+}
+.footer-contacts-item:last-child {
+  margin: 0;
+}
+.footer-contacts-item > span {
+  display: block;
+  margin: 0 0 4px;
+}
+.footer-contacts-item p {
+  letter-spacing: 2%;
+  font-weight: bold;
+}
+.footer-contacts-item a {
+  color: #fff;
+  font-family: "Onest", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0;
+}
+.footer-contacts-item a span {
+  color: #6ac1ef;
+}
+.footer-contacts-item a:hover {
+  color: #7cc1e5;
+}

@@ -1,2 +1,12 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 576px) {
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
