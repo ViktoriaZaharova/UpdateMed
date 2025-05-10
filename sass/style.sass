@@ -46,7 +46,7 @@ body
   background: #fff
   color: $dark
 
-html, body  
+html, body
 
 img
   display: block
@@ -128,12 +128,48 @@ button, .btn
   align-items: center
   justify-content: center
   text-align: center
-  padding: 10px 45px
-  font-size: 16px
-  font-weight: bold
-  height: 46px
-  border-radius: 10px
+  padding: 15px 30px
+  font-size: 18px
+  line-height: 18px
+  letter-spacing: 4%
+  font-weight: 500
+  height: 52px
+  border-radius: 32px
+  text-transform: uppercase
   transition: 0.3s ease
+
+.btn-icon
+  @include d-flex
+
+
+.btn-border
+  border: 1px solid $dark
+  color: $dark
+  &:hover
+    background: $dark
+    color: $white
+    .btn-icon
+      fill: $white
+  &:focus
+    background: $gray
+    color: $dark
+    .btn-icon
+      fill: $dark
+  &:disabled
+    opacity: 0.5
+    background: $accent
+    color: #fff
+    border-color: $accent
+    .btn-icon
+      fill: $white
+
+.btn-toggler
+  margin: 24px 0 0
+  .btn-icon
+    width: 32px
+    height: 32px
+    min-width: 32px
+    margin: 0 0 0 8px
 
 .svg-icon
   display: inline-block
@@ -159,7 +195,7 @@ ul, ol
   padding: 0 24px
 
 .container-fluid
-  padding: 0 24px  
+  padding: 0 24px
 
 .row
   margin: 0 -24px
@@ -167,17 +203,17 @@ ul, ol
     padding: 0 12px
 
 .p-20
-  padding: 20px 0      
+  padding: 20px 0
 
 .p-24
-  padding: 24px 0 
+  padding: 24px 0
 
 h1, .h1
   width: 100%
   font-family: $title-font
   font-size: 64px
   line-height: 64px
-  font-weight: normal  
+  font-weight: normal
 
 h2, .h2
   width: 100%
@@ -187,18 +223,26 @@ h2, .h2
   font-weight: normal
   margin: 0 0 32px
 
+h4, .h4
+  width: 100%
+  font-family: $title-font
+  font-size: 24px
+  line-height: 28px
+  font-weight: normal
+  margin: 0 0 8px
+
 .box-text
   font-size: 18px
   line-height: 22px
   letter-spacing: 4%
 
 .color-accent
-  color: $accent    
+  color: $accent
 
 .link
   font-size: 18px
   line-height: 20px
-  letter-spacing: 4%     
+  letter-spacing: 4%
 
 // slick slider  
 .slick-slider

@@ -5,6 +5,41 @@
   &__wrapper
     background: $white
     width: 100%
+  &__content
+    .box-text
+      margin: 37px 0 0
+      max-width: 545px
+      width: 100%
+      strong
+        display: inline
+
+.list-advantages
+  width: 100%
+  &-item
+    width: 100%
+    margin: 0 0 24px
+    padding: 32px
+    border-radius: 24px
+    background: $light-gray
+    &:last-child
+      margin: 0
+    .box-text
+      margin: 8px 0 0
+    h4
+      position: relative
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        left: -3px
+        top: -3px
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: $white
+
+
 
 // steps-order
 .steps-order

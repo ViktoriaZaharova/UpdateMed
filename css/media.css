@@ -9,4 +9,8 @@
     font-size: 32px;
     line-height: 32px;
   }
+  h4, .h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }

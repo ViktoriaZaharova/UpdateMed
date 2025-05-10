@@ -178,12 +178,59 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10px 45px;
-  font-size: 16px;
-  font-weight: bold;
-  height: 46px;
-  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 4%;
+  font-weight: 500;
+  height: 52px;
+  border-radius: 32px;
+  text-transform: uppercase;
   transition: 0.3s ease;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-border {
+  border: 1px solid #192939;
+  color: #192939;
+}
+.btn-border:hover {
+  background: #192939;
+  color: #fff;
+}
+.btn-border:hover .btn-icon {
+  fill: #fff;
+}
+.btn-border:focus {
+  background: #e4ecf3;
+  color: #192939;
+}
+.btn-border:focus .btn-icon {
+  fill: #192939;
+}
+.btn-border:disabled {
+  opacity: 0.5;
+  background: #6ac1ef;
+  color: #fff;
+  border-color: #6ac1ef;
+}
+.btn-border:disabled .btn-icon {
+  fill: #fff;
+}
+
+.btn-toggler {
+  margin: 24px 0 0;
+}
+.btn-toggler .btn-icon {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  margin: 0 0 0 8px;
 }
 
 .svg-icon {
@@ -249,6 +296,15 @@ h2, .h2 {
   line-height: 48px;
   font-weight: normal;
   margin: 0 0 32px;
+}
+
+h4, .h4 {
+  width: 100%;
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  margin: 0 0 8px;
 }
 
 .box-text {
