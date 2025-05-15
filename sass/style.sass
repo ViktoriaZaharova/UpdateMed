@@ -141,6 +141,57 @@ button, .btn
 .btn-icon
   @include d-flex
 
+.btn-dark
+  background: $dark
+  color: $white
+  position: relative
+  z-index: 1
+  border: 1px solid $dark
+  padding: 0
+  .btn-text
+    padding: 17px 20px 17px 32px
+    transition: .3s ease
+  .btn-icon-arrow
+    fill: $white
+    height: 52px
+    min-width: 52px
+    width: 52px
+    border: 1px solid $white
+    border-radius: 50%
+    @include d-flex
+    transition: .3s ease
+    margin: 0 0 0 auto
+  &:hover
+    border-color: $dark
+    background: transparent
+    color: $dark
+    .btn-icon-arrow
+      border-color: $dark
+      fill: $dark
+      svg
+        transform: rotate(45deg)
+  &:focus
+    background: transparent
+    color: $white
+    border-color: transparent
+    .btn-text
+      background: $accent
+      border-radius: 32px
+    .btn-icon-arrow
+      border-color: $accent
+      fill: $accent
+      svg
+        transform: rotate(45deg)
+  &.disabled
+    border-color: $dark
+    background: $dark
+    color: $white
+    opacity: 0.5
+    .btn-icon-arrow
+      border-color: $white
+      fill: $white
+
+
 
 .btn-border
   border: 1px solid $dark
@@ -162,6 +213,24 @@ button, .btn
     border-color: $accent
     .btn-icon
       fill: $white
+
+.btn-accent
+  background: $accent
+  color: $white
+  border: 1px solid $accent
+  &:hover
+    background: $dark
+    color: $white
+    border-color: $dark
+  &:focus
+    background: $gray
+    color: $dark
+    border-color: $dark 
+  &:disabled
+    opacity: 0.5
+    background: $accent
+    border-color: $accent
+    color: $white     
 
 .btn-toggler
   margin: 24px 0 0
@@ -202,11 +271,23 @@ ul, ol
   >*
     padding: 0 12px
 
-.p-20
-  padding: 20px 0
+.p-120
+  padding: 120px 0
+
+.m-120
+  margin: 120px 0  
 
 .p-24
   padding: 24px 0
+
+.mb-24
+  margin-bottom: 24px
+
+.wrapper-bg
+  width: 100%
+  border-radius: 24px
+  &.bg-gray
+    background: $gray
 
 h1, .h1
   width: 100%
@@ -223,6 +304,13 @@ h2, .h2
   font-weight: normal
   margin: 0 0 32px
 
+h3, .h3
+  width: 100%
+  font-family: $title-font
+  font-size: 32px
+  line-height: 32px 
+  margin: 0 0 12px 
+
 h4, .h4
   width: 100%
   font-family: $title-font
@@ -235,9 +323,16 @@ h4, .h4
   font-size: 18px
   line-height: 22px
   letter-spacing: 4%
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
 
 .color-accent
   color: $accent
+
+.color-gray-stroke
+  color: $gray-stroke
 
 .link
   font-size: 18px
@@ -256,25 +351,29 @@ h4, .h4
   position: relative
   display: flex
   align-items: flex-start
-  color: rgba(255, 255, 255, 0.5)
+  color: $dark60
   font-size: 14px
-  margin: 15px 0 0
-  line-height: 1.14
-
-.inp-check
-  display: none
-
-.checkbox-custom
-  margin: 0 12px 0 0
+  font-weight: 300
+  line-height: 16px
+  margin: 16px 0
+  input
+    display: none
+    &:checked
+      .label-checkbox
+        &__custom
+          background: $dark url('../img/check.svg') no-repeat center
+          background-size: 10px
+ 
+.label-checkbox__custom
+  margin: 0 8px 0 0
   position: relative
-  border-radius: 6px
-  background-color: #fff
-  width: 16px
-  height: 16px
-  min-width: 16px
+  border-radius: 0
+  border: 1px solid $dark60
+  background: transparent
+  width: 18px
+  height: 18px
+  min-width: 18px
   cursor: pointer
 
-.inp-check:checked ~ .checkbox-custom
-  background: #fff url("../img/check-black.svg") no-repeat center
-  background-size: 8px
+
 //checkbox my end

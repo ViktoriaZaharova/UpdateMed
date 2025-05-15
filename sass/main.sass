@@ -1,5 +1,91 @@
 @import "vars"
 
+// advantages-section
+.advantages-section
+  margin: 120px 0 80px
+       
+.advantages-box
+  width: 100%
+  height: 100%
+  position: relative
+  z-index: 1
+  padding: 32px
+  background: $light-gray
+  border-radius: 24px
+  display: flex
+  flex-direction: column
+  &::before, &:after
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    background: #fff
+  &::before
+    bottom: 32px
+    right: 32px
+  &::after
+    top: 32px
+    left: 32px
+  &__icon
+    border-radius: 50%
+    @include d-flex
+    margin: 0 0 24px auto
+    background: $white
+    width: 144px
+    height: 144px
+    min-width: 144px
+    padding: 32px
+  .box-text
+    max-width: 180px  
+    
+// mission-section
+.mission-section
+  margin: 0 0 120px
+  .box-text
+    max-width: 570px
+
+
+.mission-text
+  max-width: 370px
+  .btn
+    margin: 48px 0 0   
+
+
+// brands-section
+.brands-section
+  color: $white
+  text-align: center
+  .wrapper-bg
+    background: url('../img/brands-bg.jpg') no-repeat center
+    background-size: cover
+
+
+
+.brands-wrapper
+  margin: 0 auto
+  max-width: 1232px
+  padding: 120px 24px
+
+.list-brands
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  li
+    margin: 32px
+  a
+    @include d-flex  
+
+// callback-section
+.callback-section
+  h2
+    margin: 0 0 10px
+  .steps-order__wrapper
+    max-width: 483px    
+
 // seo-content
 .seo-content
   &__wrapper
