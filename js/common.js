@@ -4,7 +4,6 @@ $('[name="phone"]').mask('+7 (999) 999-99-99');
 $('.list-advantages').each(function () {
   if ($(this).find('.list-advantages-item').length > 3) {
     $(this).find('.list-advantages-item').slice(3).hide();
-    // $(this).parent('.modal-body').append('<div class="text-center load-more-wrap"><button class="btn btn-default">Загрузить еще</button></div>');
   }
 
 });
@@ -23,3 +22,34 @@ $('.btn-toggler').on('click', function (e) {
 });
 
 // show list all
+
+
+// show list all reviews
+$('.link-load-more').on('click', function (e) {
+  e.preventDefault();
+
+  var
+    $this = $(this),
+    content = $(this).parents('.reviews-card').find('.box-text');
+
+  if (!$this.hasClass('trigger')) {
+    $this.addClass('trigger');
+    $this.find('span').html('Скрыть');
+
+    content.addClass('open');
+  } else {
+    $this.removeClass('trigger');
+    $this.find('span').html('Показать еще');
+
+    content.removeClass('open');
+  }
+});
+
+// slick slider
+$('.hits-slider').slick({
+  slidesToShow: 3,
+  arrows: true,
+  appendArrows: '.hits-slider-arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
