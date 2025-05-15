@@ -28,6 +28,20 @@
 }
 @font-face {
   font-family: "Onest";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Regular.eot");
+  src: url("../fonts/Onest/Onest-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Regular.woff") format("woff"), url("../fonts/Onest/Onest-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Onest/Onest-Medium.eot");
+  src: url("../fonts/Onest/Onest-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Onest/Onest-Medium.woff") format("woff"), url("../fonts/Onest/Onest-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Onest";
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/Onest/Onest-Bold.eot");
@@ -368,6 +382,75 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 }
 .btn-accent:disabled .svg-icon {
   fill: #fff;
+}
+
+.btn-accent-v2 {
+  background: #6ac1ef;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #6ac1ef;
+  padding: 0;
+}
+.btn-accent-v2 .btn-text {
+  padding: 17px 20px 17px 32px;
+  transition: 0.3s ease;
+}
+.btn-accent-v2 .btn-icon-arrow {
+  fill: #fff;
+  height: 52px;
+  min-width: 52px;
+  width: 52px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  margin: 0 0 0 auto;
+  padding: 3px;
+}
+.btn-accent-v2 .btn-icon-arrow svg {
+  width: 100%;
+  height: 100%;
+}
+.btn-accent-v2:hover {
+  border-color: #6ac1ef;
+  background: transparent;
+  color: #6ac1ef;
+}
+.btn-accent-v2:hover .btn-icon-arrow {
+  border-color: #6ac1ef;
+  fill: #6ac1ef;
+}
+.btn-accent-v2:hover .btn-icon-arrow svg {
+  transform: rotate(45deg);
+}
+.btn-accent-v2:focus {
+  background: #192939;
+  color: #fff;
+  border-color: #192939;
+}
+.btn-accent-v2:focus .btn-icon-arrow {
+  border-color: #fff;
+  fill: #fff;
+}
+.btn-accent-v2:focus .btn-icon-arrow svg {
+  transform: rotate(45deg);
+}
+.btn-accent-v2.disabled {
+  border-color: transparent;
+  background: transparent;
+  color: #fff;
+  opacity: 0.5;
+}
+.btn-accent-v2.disabled .btn-text {
+  background: #6ac1ef;
+  border-radius: 32px;
+}
+.btn-accent-v2.disabled .btn-icon-arrow {
+  border-color: #6ac1ef;
+  fill: #6ac1ef;
 }
 
 .btn-toggler {

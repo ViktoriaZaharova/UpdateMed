@@ -1,2 +1,147 @@
 @import "vars"
 
+header
+  background: $light-gray
+
+.header-top
+  padding: 16px 0
+  background: $white
+
+.menu-user
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  line-height: 20px
+  letter-spacing: 0.2px
+  li
+    margin: 0 32px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $dark60
+      &:hover
+        color: $accent
+
+.menu-navigation
+  display: flex
+  align-items: center
+  margin: 0 0 0 auto
+  li
+    margin: 0 34px 0 0
+    &:last-child
+      margin: 0
+
+.menu-navigation-link
+  position: relative
+  z-index: 1
+  @include d-flex
+  width: 60px
+  height: 36px
+  min-width: 60px
+  background: $light-gray
+  border-radius: 16px
+  fill: $dark60     
+  padding: 4px
+  &__val
+    position: absolute
+    z-index: 1
+    top: -10px
+    right: -4px
+    background: $accent
+    color: $white
+    border-radius: 8px
+    font-size: 12px
+    letter-spacing: 0.6px
+    font-family: $font 
+    padding: 0 7px
+    height: 16px
+    text-align: center
+    @include d-flex
+  &:hover
+    background: $dark
+    fill: $white  
+
+.header-center
+  background: $light-gray
+  padding: 21px 0
+  border-radius: 20px 20px 0 0
+
+.form-search
+  margin: 0 auto 0 32px
+  max-width: 448px
+  width: 100%
+  position: relative
+  z-index: 1
+  label
+    margin: 0
+  [type='submit']
+    position: absolute
+    right: 24px
+    top: 20px
+    z-index: 1
+    width: 16px
+    height: 16px
+    min-width: 16px
+    stroke: $dark40
+    fill: none 
+    background: transparent
+    padding: 0  
+    @include d-flex
+    border: none
+    border-radius: 0   
+
+.mail-link
+  font-size: 18px
+  font-weight: 500
+  font-family: $font
+  color: $dark60
+  letter-spacing: 0.6px
+  margin: 0 56px 0 0
+  &:hover
+    color: $accent
+
+.phone-link
+  font-family: $font
+  font-size: 32px
+  font-weight: bold
+  color: $dark
+  margin: 0 16px 0 0
+  &:hover
+    color: $accent
+
+.link-callback
+  font-size: 18px
+  line-height: 20px
+  text-decoration: underline
+  color: $dark60
+  letter-spacing: 0.6px
+  &:hover
+    color: $accent
+
+.header-bottom
+  width: 100%
+  border-bottom: 1px solid $light-gray
+  border-radius: 20px 20px 0 0
+  background: $white
+
+.nav-menu
+  width: 100%
+
+.menu
+  width: 100%
+  display: flex
+  align-items: stretch
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 0.2px
+
+.menu-item
+  flex: auto  
+
+.menu-link
+  padding: 20px 24px 
+  color: $dark
+  &:hover, &.active
+    color: $accent     

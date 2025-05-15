@@ -53,3 +53,23 @@ $('.hits-slider').slick({
   prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
 });
+
+$('.home-slider').slick({
+  slidesToShow: 1,
+  fade: true,
+  dots: true,
+  asNavFor: '.home-slider-image',
+  appendDots: '.home-slider-arrows',
+  appendArrows: '.home-slider-arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+
+$('.home-slider-image').slick({
+  slidesToShow: 1,
+  fade: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+});
