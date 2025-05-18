@@ -2,6 +2,8 @@
 
 header
   background: $light-gray
+  position: relative
+  z-index: 5
 
 .header-top
   padding: 16px 0
@@ -41,7 +43,7 @@ header
   min-width: 60px
   background: $light-gray
   border-radius: 16px
-  fill: $dark60     
+  fill: $dark60
   padding: 4px
   &__val
     position: absolute
@@ -53,14 +55,14 @@ header
     border-radius: 8px
     font-size: 12px
     letter-spacing: 0.6px
-    font-family: $font 
+    font-family: $font
     padding: 0 7px
     height: 16px
     text-align: center
     @include d-flex
   &:hover
     background: $dark
-    fill: $white  
+    fill: $white
 
 .header-center
   background: $light-gray
@@ -84,12 +86,12 @@ header
     height: 16px
     min-width: 16px
     stroke: $dark40
-    fill: none 
+    fill: none
     background: transparent
-    padding: 0  
+    padding: 0
     @include d-flex
     border: none
-    border-radius: 0   
+    border-radius: 0
 
 .mail-link
   font-size: 18px
@@ -130,6 +132,7 @@ header
 
 .menu
   width: 100%
+  text-align: center
   display: flex
   align-items: stretch
   font-size: 18px
@@ -138,10 +141,98 @@ header
   letter-spacing: 0.2px
 
 .menu-item
-  flex: auto  
+  flex: auto
 
 .menu-link
-  padding: 20px 24px 
+  padding: 20px 24px
   color: $dark
   &:hover, &.active
-    color: $accent     
+    color: $accent
+
+.btn-burger
+  width: 52px
+  height: 52px
+  min-width: 52px
+  border: 1px solid $dark
+  border-radius: 50%
+  padding: 10px
+  cursor: pointer
+  margin: 0 0 0 auto
+  display: none
+  .svg-icon-close
+    display: none
+  &.click
+    .svg-icon
+      display: none
+    .svg-icon-close
+      display: block
+
+.mobile-menu
+  display: none
+  z-index: 10
+  position: fixed
+  left: 0
+  top: 84px
+  height: calc( 100% - 84px)
+  width: 100%
+  background: #fff
+  text-align: center
+  overflow-y: auto
+  &__head
+    width: 100%
+    padding: 16px
+  .menu
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    li
+      width: 100%
+      margin: 0 0 12px
+      &:last-child
+        margin: 0
+      a
+        width: 100%
+        padding: 14px
+        border-radius: 24px
+        background: $light-gray
+  &__body
+    padding: 24px
+  .menu-user
+    width: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    li
+      margin: 0 0 32px
+      &:last-child
+        margin: 0
+      a
+        display: flex
+        align-items: center
+    &__val
+      background: $accent
+      margin: 0 0 0 4px
+      color: #fff
+      padding: 0 7px
+      border-radius: 8px
+      height: 16px
+      font-size: 12px
+      font-family: $font
+      @include d-flex
+  &__footer
+    padding: 48px 24px
+    width: 100%
+    background: $light-gray
+  .list-messengers
+    justify-content: center
+  .form-search
+    max-width: 432px
+    margin: 48px auto
+  .link-callback
+    margin: 0 auto
+  .phone-link
+    margin: 24px auto 16px
+    color: $accent
+  .mail-link
+    margin: 0 auto
+    color: $dark60

@@ -21,6 +21,39 @@ footer .box-information p:last-child {
   margin: 0;
 }
 
+.list-messengers {
+  display: flex;
+  align-items: flex-start;
+}
+.list-messengers li {
+  margin: 0 24px 0 0;
+}
+.list-messengers li:last-child {
+  margin: 0;
+}
+.list-messengers li a {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  fill: #fff;
+  padding: 10px;
+  background: #6ac1ef;
+}
+.list-messengers li a:hover {
+  background: #192939;
+  fill: #fff;
+}
+.list-messengers li a:focus {
+  background: #e4ecf3;
+  fill: #192939;
+}
+.list-messengers li a:disabled {
+  opacity: 0.5;
+  fill: #fff;
+  background: #6ac1ef;
+}
+
 .list-messengers-column {
   display: flex;
   flex-direction: column;
@@ -31,28 +64,6 @@ footer .box-information p:last-child {
 }
 .list-messengers-column li:last-child {
   margin: 0;
-}
-.list-messengers-column li a {
-  width: 52px;
-  height: 52px;
-  min-width: 52px;
-  border-radius: 50%;
-  fill: #fff;
-  padding: 10px;
-  background: #6ac1ef;
-}
-.list-messengers-column li a:hover {
-  background: #192939;
-  fill: #fff;
-}
-.list-messengers-column li a:focus {
-  background: #e4ecf3;
-  fill: #192939;
-}
-.list-messengers-column li a:disabled {
-  opacity: 0.5;
-  fill: #fff;
-  background: #6ac1ef;
 }
 
 .footer-column {

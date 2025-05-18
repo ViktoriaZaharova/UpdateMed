@@ -18,12 +18,11 @@ footer
       &:last-child
         margin: 0  
 
-.list-messengers-column
+.list-messengers
   display: flex
-  flex-direction: column
-  align-items: center
+  align-items: flex-start
   li
-    margin: 0 0 24px
+    margin: 0 24px 0 0
     &:last-child
       margin: 0
     a
@@ -44,6 +43,17 @@ footer
         opacity: 0.5
         fill: #fff
         background: $accent
+
+.list-messengers-column
+  display: flex
+  flex-direction: column
+  align-items: center
+  li
+    margin: 0 0 24px
+    &:last-child
+      margin: 0
+    
+
 
 
 .footer-column

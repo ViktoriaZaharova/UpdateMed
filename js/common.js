@@ -52,6 +52,15 @@ $('.hits-slider').slick({
   appendArrows: '.hits-slider-arrows',
   prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: true,
+      }
+    }
+  ]
 });
 
 $('.home-slider').slick({
@@ -63,6 +72,14 @@ $('.home-slider').slick({
   appendArrows: '.home-slider-arrows',
   prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
   nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        asNavFor: false,
+      }
+    }
+  ]
 });
 
 
@@ -72,4 +89,12 @@ $('.home-slider-image').slick({
   arrows: false,
   swipe: false,
   swipeToSlide: false,
+});
+
+// mobile menu
+$('.btn-burger').on('click', function(e){
+  e.preventDefault();
+  $('html, body').toggleClass('no-scroll');
+  $(this).toggleClass('click');
+  $('.mobile-menu').fadeToggle();
 });

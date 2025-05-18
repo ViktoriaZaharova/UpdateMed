@@ -1,15 +1,15 @@
-<svg width="416" height="184" viewBox="0 0 416 184" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_17035_1347" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="242" y="0" width="154" height="154">
-<path d="M396 1.52588e-05H242V154H396V1.52588e-05Z" fill="white"/>
+<svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_17067_1344" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="154" height="154">
+<path d="M154 1.52588e-05H1.52588e-05V154H154V1.52588e-05Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_17035_1347)">
-<path d="M358.261 137.156L392.993 76.9998L358.261 16.8435H334.198L368.93 76.9998L334.198 137.156H358.261Z" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
+<g mask="url(#mask0_17067_1344)">
+<path d="M116.261 137.156L150.993 76.9998L116.261 16.8435H92.1983L126.93 76.9998L92.1983 137.156H116.261Z" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
-<path d="M313.737 58.6446L324.334 76.9998L289.603 137.156H313.667L348.397 76.9998L313.667 16.8435H289.603L300.2 35.1978M304.416 42.5L309.9 52" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
-<mask id="mask1_17035_1347" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="242" y="0" width="154" height="154">
-<path d="M396 1.52588e-05H242V154H396V1.52588e-05Z" fill="white"/>
+<path d="M71.7366 58.6446L82.3341 76.9998L47.6031 137.156H71.6665L106.397 76.9998L71.6665 16.8435H47.6031L58.1997 35.1978M62.4156 42.5L67.9004 52" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
+<mask id="mask1_17067_1344" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="154" height="154">
+<path d="M154 1.52588e-05H1.52588e-05V154H154V1.52588e-05Z" fill="white"/>
 </mask>
-<g mask="url(#mask1_17035_1347)">
-<path d="M269.071 137.156L303.802 76.9998L269.071 16.8435H245.008L279.739 76.9998L245.008 137.156H269.071Z" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
+<g mask="url(#mask1_17067_1344)">
+<path d="M27.0713 137.156L61.8025 76.9998L27.0713 16.8435H3.00789L37.7391 76.9998L3.00789 137.156H27.0713Z" stroke="white" stroke-width="2" stroke-miterlimit="2.613" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>

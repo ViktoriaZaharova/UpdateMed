@@ -31,6 +31,7 @@
   &-arrows
     .slick-next
       order: 1
+      margin: 0
     .slick-dots
       width: 100%
       margin: 0 32px
@@ -40,18 +41,22 @@
       padding: 0
       position: relative
       z-index: 1
-
+      list-style: none
       li
-        border-radius: 50%
-        width: 8px
-        height: 8px
-        min-width: 8px
-        background: $dark
-        @include d-flex
+        flex: 1
         transition: .3s ease
         cursor: pointer
         position: relative
         z-index: 1
+        background: transparent
+        &:after
+          content: ''
+          border-radius: 50%
+          width: 8px
+          height: 8px
+          min-width: 8px
+          background: $dark
+          display: block
         &::before
           content: ''
           position: absolute
@@ -59,19 +64,21 @@
           top: 50%
           transform: translate(0,-50%)
           height: 1px
-          width: 83px
+          width: 100%
           background: $gray-stroke
 
           z-index: -1
         button
           display: none
         &:last-child
+          flex: none
           &::before
             display: none
         &.slick-active
 
           ~li
-            background: $gray-stroke
+            &:after
+              background: $gray-stroke
             &::before
               background: url('../img/slick-line.svg') no-repeat center
               background-size: 100%
@@ -81,6 +88,16 @@
   .box-text
     margin: 24px 0
     max-width: 520px
+  &__img
+    margin: 16px 0 0
+    width: 100%
+    background: url('../img/home-slider-bg-mobile.png') no-repeat center
+    background-size: cover
+    border-radius: 32px
+    border-bottom: 8px solid $dark
+    overflow: hidden
+    display: none
+    padding: 28px 0 0
 
 .home-slider-arrows__slider
   position: relative
@@ -164,6 +181,7 @@
     height: 438px
     border-bottom: 1px solid $gray-stroke
     @include d-flex
+    padding: 10px
   &__body
     width: 100%
     height: calc( 100% - 438px )
@@ -217,7 +235,7 @@
   position: relative
   z-index: 1
   background: $light-gray
-  border-radius: 24px
+  border-radius: 32px
   padding: 32px
   border: 1px solid $light-gray
   overflow: hidden
@@ -234,11 +252,11 @@
     border-radius: 50%
     background: #fff
   &:before
-    bottom: 32px
-    right: 32px
+    bottom: 30px
+    right: 30px
   &:after
-    top: 32px
-    left: 32px
+    top: 30px
+    left: 30px
   &__img
     position: absolute
     z-index: -1
@@ -566,6 +584,7 @@
     border-right: 2px solid $gray
     width: 107px
     min-width: 107px
+
     margin: 0
   &__text
     padding: 0 0 0 24px
