@@ -673,6 +673,8 @@
   color: #e4ecf3;
   border-right: 2px solid #e4ecf3;
   width: 107px;
+  min-width: 107px;
+  margin: 0;
 }
 .steps-order-box__text {
   padding: 0 0 0 24px;

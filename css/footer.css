@@ -63,7 +63,7 @@ footer .box-information p:last-child {
 
 .menu-documents {
   margin: 0 auto;
-  max-width: 307px;
+  max-width: 300px;
   width: 100%;
 }
 .menu-documents__item {
@@ -105,7 +105,7 @@ footer .box-information p:last-child {
 .footer-contacts-item {
   font-size: 18px;
   line-height: 22px;
-  letter-spacing: 4%;
+  letter-spacing: 0.6px;
   margin: 0 0 16px;
 }
 .footer-contacts-item:last-child {

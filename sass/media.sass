@@ -1,11 +1,219 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px)
+@media only screen and (max-width: 1400px)
+  .footer-contacts-item a
+    font-size: 26px
+    line-height: normal
 
+  .footer-contacts-item
+    font-size: 16px
+    line-height: normal
+
+  footer
+    padding: 100px 0
+    .logo
+      max-width: 300px
+
+  .footer-column
+    max-width: 300px
+
+  .menu-footer
+    max-width: 180px
+
+  .steps-order__content
+    padding: 64px
+
+  h2, .h2
+    font-size: 40px
+    line-height: 40px
+
+  .p-120
+    padding: 70px 0
+
+  .p-24
+    padding: 16px 0
+
+  .steps-order-box__number
+    margin: 0
+    font-size: 48px
+    line-height: 48px
+
+  .blog-card
+    margin: 0 0 16px
+    border-radius: 24px
+    padding: 16px
+    &:last-child
+      margin: 0
+    &__img
+      margin: 0 24px
+    &__title
+      margin: 0 24px 0 0
+    .btn-link
+      margin: 0 0 0 24px
+
+  .reviews-card
+    &__photo
+      width: 200px
+    &__body
+      width: calc( 100% - 200px )
+      padding: 0 16px
+    &__content
+      margin: 30px 0 0  
+
+@media only screen and (max-width: 1200px)
+  .container, .container-fluid
+    padding: 0 16px
+
+  .row
+    margin: 0 -8px
+    >*
+      padding: 0 8px
+
+  .mb-48
+    margin-bottom: 24px
+
+  .reviews-section .mb-48
+    margin-bottom: 24px  
+
+  footer
+    padding: 64px 0
+
+  .footer-column
+    max-width: 250px
+
+  .list-messengers-column
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin: 64px auto 0
+    li
+      margin: 0 24px 0 0
+      &:last-child
+        margin: 0
+
+  .footer-contacts
+    margin: 64px auto 0
+    width: 100%
+    text-align: center
+
+  .footer-contacts-item
+    margin: 0 0 32px
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.2px
+    a
+      font-size: 32px
+      line-height: 32px
+      margin: 0 auto
+
+  .blog-card
+    flex-direction: column
+    align-items: flex-start
+    &__head
+      position: relative
+      z-index: 1
+      max-width: none
+      width: 100%
+    &__date
+      position: absolute
+      z-index: 1
+      top: 16px
+      right: 16px
+    &__img
+      margin: 0
+      height: 300px
+      width: 100%
+      min-width: auto
+      max-width: none
+      border-radius: 16px
+    &__body
+      width: 100%
+      margin: 16px 0 0
+      padding: 0
+      flex-direction: column
+      align-items: flex-start
+      position: relative
+      z-index: 1
+    &__title
+      margin: 0 0 12px
+      max-width: none
+    .box-text
+      padding: 0 76px 0 0
+      max-width: none
+    .btn-link
+      position: absolute
+      bottom: 0
+      right: 0
 @media only screen and (max-width: 992px)
+  footer
+    .logo
+      margin: 0 auto 64px
+      max-width: 353px
+
+  .menu-footer
+    max-width: none
+    width: 100%
+    order: -1
+    text-align: center
+    &__item
+      margin: 0 0 24px
+      &:last-child
+        margin: 0
+    &__link
+      margin: 0 auto
+
+  footer .box-information
+      margin: 0
+      max-width: none
+
+  .footer-column
+    max-width: none
+    order: 2
+    text-align: center
+    margin: 16px auto 0
+
+  .menu-documents
+    order: 1
+    text-align: center
+    margin: 64px auto 0
+
+  .steps-order__content
+    padding: 64px 16px
+    height: auto
+
+  .steps-order__img
+    margin: 16px 0 0
+    height: auto
+
+  .list-advantages
+    margin: 24px 0 0
+
+  .list-advantages-item
+    padding: 24px
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+
+  .btn-toggler
+    margin: 16px 0 0
+
+  .seo-content__content .box-text
+    margin: 24px 0 0
+    max-width: none
+
+  .callback-section .steps-order__wrapper
+    max-width: none
+
+  .form-callback
+    max-width: none    
 
 @media only screen and (max-width: 768px)
+  .blog-card
+    .box-text
+      font-size: 14px
+      line-height: 16px
 
 @media only screen and (max-width: 576px)
   h1, .h1
@@ -15,17 +223,115 @@
   h2, .h2
     font-size: 32px
     line-height: 32px
+    margin: 0 0 16px
 
   h3, .h3
     font-size: 24px
     line-height: 24px
-    
+
   h4, .h4
     font-size: 18px
-    line-height: 20px  
+    line-height: 20px
+
+  .p-120
+    padding: 64px 0
+
+  .blog-section, .reviews-section
+    .btn.ml-auto
+      margin: 10px 0 0 !important  
+
+  .steps-order-box
+    padding: 24px
+    &__number
+      font-size: 48px
+      line-height: 48px
+      margin: 0
+      text-align: center
+      display: flex
+      align-items: start
+      justify-content: center
+
+  .seo-content
+    .container-fluid
+      padding: 0
+
+  .reviews-card
+    padding: 24px
+    &__head
+      flex-direction: column
+      align-items: flex-start
+      &-box
+        width: 100%
+        &:last-child
+          margin: 0 0 16px
+          order: -1
+          display: flex
+          align-items: center
+          flex-wrap: wrap
+          justify-content: flex-start
+    &__date
+      margin: 0 auto 0 0
+    .rating-box
+      margin: 0
+      order: 1
+    .link-reviews-all
+      margin: 0 16px 0 0      
+    &__title
+      br
+        display: none
+    .category-product-link
+      display: none          
+    &__photo
+      display: none
+    &__body
+      width: 100%
+      padding: 0
+    &__content
+      padding: 16px 0 0
+      margin: 16px 0 0
+      border-top: 1px solid #afc7ce  
+
+  .reviews-card .rating-box
+    margin: 5px 0
+    width: 100%
+    justify-content: flex-start
+
+  .reviews-card__date
+    margin: 0 auto 5px 0
+
+  .reviews-section
+    padding: 64px 0
 
 @media only screen and (max-width: 480px)
+  .steps-order__content
+    padding: 40px 16px
+
+  .steps-order-box
+    font-size: 16px
+    padding: 16px
+    &__number
+      font-size: 32px
+      line-height: 32px
+      width: 90px
+      min-width: 90px
+      padding: 0 10px 0 0
+    &__text
+      padding: 0 0 0 10px
+
+  .blog-card__img
+    height: 200px
+
+  .blog-card .box-text
+    padding: 0 53px 0 0
 
 @media only screen and (max-width: 420px)
+  h2, .h2
+    font-size: 28px
+    line-height: 28px
+    
+  .seo-content
+    h2, .h2
+      font-size: 24px
+      line-height: 26px
 
 @media only screen and (max-width: 370px)

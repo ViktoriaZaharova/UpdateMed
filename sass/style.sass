@@ -177,7 +177,6 @@ button, .btn
   color: $white
   position: relative
   z-index: 1
-  border: 1px solid $dark
   padding: 0
   .btn-text
     padding: 17px 20px 17px 32px
@@ -193,7 +192,7 @@ button, .btn
     transition: .3s ease
     margin: 0 0 0 auto
   &:hover
-    border-color: $dark
+    border: 1px solid $dark
     background: transparent
     color: $dark
     .btn-icon-arrow
@@ -204,7 +203,6 @@ button, .btn
   &:focus
     background: transparent
     color: $white
-    border-color: transparent
     .btn-text
       background: $accent
       border-radius: 32px
@@ -214,7 +212,7 @@ button, .btn
       svg
         transform: rotate(45deg)
   &.disabled
-    border-color: $dark
+    border: 1px solid $dark
     background: $dark
     color: $white
     opacity: 0.5
