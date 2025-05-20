@@ -50,7 +50,7 @@ body
 //   overflow-x: hidden
 
 .no-scroll
-  overflow-y: hidden  
+  overflow-y: hidden
 
 img
   display: block
@@ -98,16 +98,15 @@ input, textarea, select
     border-color: $gray-stroke
     color: $dark
     &::placeholder
-      color: $dark  
+      color: $dark
   &:focus
     border-color: $dark
     color: $dark
-    background: $white  
+    background: $white
   &:valid
     background: #F0F0F0
     color: $dark
     border-color: $gray-stroke
-
 
 input[type="radio"], input[type="checkbox"]
   width: auto
@@ -130,7 +129,7 @@ textarea
 
 .form-callback
   margin: 24px 0 0
-  max-width: 453px  
+  max-width: 453px
 
 button, .btn
   outline: none
@@ -170,7 +169,7 @@ button, .btn
       margin: 0
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
-  border-radius: 32px  
+  border-radius: 32px
 
 .btn-icon
   @include d-flex
@@ -327,7 +326,6 @@ button, .btn
     .btn-icon-arrow
       border-color: $accent
       fill: $accent
-      
 
 .btn-toggler
   margin: 24px 0 0
@@ -350,8 +348,8 @@ button, .btn
   border-radius: 50%
   padding: 10px
 
-.btn-link-v2 
-  padding: 3px  
+.btn-link-v2
+  padding: 3px
 
 .btn-link-border-accent
   border: 1px solid $accent
@@ -366,9 +364,9 @@ button, .btn
     border-color: $dark
     fill: $white
   &:disabled
-    opacity: 0.3  
+    opacity: 0.3
     fill: $accent
-    border-color: $accent  
+    border-color: $accent
 
 .btn-link-border-gray-stroke
   background: $white
@@ -383,12 +381,12 @@ button, .btn
     background: $dark
     border-color: $dark
     fill: $white
-    
+
   &:disabled
-    opacity: 0.3  
+    opacity: 0.3
     background: $white
     fill: $gray-stroke
-    border-color: $gray-stroke      
+    border-color: $gray-stroke
 
 .btn-link-white
   background: $white
@@ -408,9 +406,9 @@ button, .btn
       transform: rotate(45deg)
   &:disabled
     background: $white
-    opacity: 0.3  
+    opacity: 0.3
     fill: $dark
-    border-color: $dark      
+    border-color: $dark
 
 .text-decoration
   text-decoration: underline
@@ -456,8 +454,11 @@ ul, ol
 .mb-48
   margin-bottom: 48px
 
+.mt-24
+  margin-top: 24px  
+
 .ml-auto
-  margin-left: auto    
+  margin-left: auto
 
 .wrapper-bg
   width: 100%
@@ -512,7 +513,7 @@ h4, .h4
   color: $gray-stroke
 
 .bg-white
-  background: $white  
+  background: $white
 
 .link
   font-size: 18px
@@ -527,7 +528,7 @@ h4, .h4
   letter-spacing: 0.6px
   &__val
     margin: 0 0 0 4px
-  
+
 .list-rating
   display: flex
   align-items: center
@@ -541,11 +542,10 @@ h4, .h4
     &:last-child
       margin: 0
 
-
 .page-home
   padding: 80px 0 120px
 
-.nav-breadcrumb
+.nav-breadcrumb, .nav-pagination
   width: 100%
 
 .breadcrumb
@@ -567,6 +567,53 @@ h4, .h4
         margin: 0 10px
         display: inline-block
 
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  line-height: 22px
+  font-family: $default-font
+  li
+    &:first-child
+      margin: 0 16px 0 0
+    &:last-child
+      margin: 0 0 0 16px
+    a
+      padding: 0 10px
+      color: $dark40
+      &:hover
+        color: $accent
+      &:focus
+        color: $dark60
+      &:disabled
+        color: $dark40
+      &.active
+        color: $dark
+
+.pagination-arrow
+  width: 52px
+  height: 52px
+  min-width: 52px
+  @include d-flex
+  border-radius: 50%
+  border: 1px solid $gray-stroke
+  padding: 10px
+  fill: $gray-stroke
+  background: $white
+  &:hover
+    background: $accent
+    border-color: $accent
+    fill: #fff
+  &:focus
+    background: $dark
+    fill: #fff
+    border-color: $dark
+  &:disabled
+    background: $gray-stroke
+    fill: $dark
+    opacity: 0.5
 
 // slick slider  
 .slick-slider
@@ -603,7 +650,7 @@ h4, .h4
   background: #fff
   padding: 10px
   fill: $dark
-  transition: .3s ease  
+  transition: .3s ease
   &:hover
     background: $accent
     border-color: $accent
@@ -618,8 +665,6 @@ h4, .h4
     background: #fff
     border-color: $gray-stroke
     fill: $gray-stroke
-
-    
 
 .slider-stretch
   .slick-list
