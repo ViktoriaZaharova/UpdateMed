@@ -108,6 +108,18 @@
   .footer-column
     max-width: 250px
 
+  .footer-contacts
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    margin: 64px 0 0
+
+  .footer-contacts-item
+    margin: 0 auto 0 0
+    &:last-child
+      margin: 0
+
   .list-messengers-column
     flex-direction: row
     align-items: center
@@ -118,21 +130,6 @@
       margin: 0 24px 0 0
       &:last-child
         margin: 0
-
-  .footer-contacts
-    margin: 64px auto 0
-    width: 100%
-    text-align: center
-
-  .footer-contacts-item
-    margin: 0 0 32px
-    font-size: 18px
-    line-height: 22px
-    letter-spacing: 0.2px
-    a
-      font-size: 32px
-      line-height: 32px
-      margin: 0 auto
 
   .blog-card
     flex-direction: column
@@ -242,9 +239,28 @@
     &__link
       margin: 0 auto
 
-  footer .box-information
+  footer
+    .box-information
       margin: 0
       max-width: none
+
+  .footer-contacts
+    margin: 64px auto 0
+    width: 100%
+    text-align: center
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  .footer-contacts-item
+    margin: 0 0 32px
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.2px
+    a
+      font-size: 32px
+      line-height: 32px
+      margin: 0 auto
 
   .footer-column
     max-width: none
@@ -277,9 +293,11 @@
   .btn-toggler
     margin: 16px 0 0
 
-  .seo-content__content .box-text
-    margin: 24px 0 0
-    max-width: none
+  .seo-content__content
+    position: relative
+    .box-text
+      margin: 24px 0 0
+      max-width: none
 
   .callback-section .steps-order__wrapper
     max-width: none
@@ -327,6 +345,16 @@
     align-items: center
     justify-content: center
 
+  .page-home
+    padding: 64px 0
+
+  .map-wrapper
+    margin: 16px 0 0
+
+  .page-contacts
+    .list-messengers
+      margin: 48px auto 0
+      justify-content: center
 
 @media only screen and (max-width: 768px)
   .blog-card
@@ -338,6 +366,7 @@
   h1, .h1
     font-size: 40px
     line-height: 40px
+    margin: 0 0 16px
 
   h2, .h2
     font-size: 32px
@@ -408,6 +437,7 @@
     &__body
       width: 100%
       padding: 0
+      border: none
     &__content
       padding: 16px 0 0
       margin: 16px 0 0
@@ -460,6 +490,19 @@
       bottom: 24px
       right: 24px
 
+  .contacts-item
+    margin: 0 0 16px
+    padding: 24px
+
+    &:last-child
+      margin: 0
+
+  .address-item
+    margin: 8px 0 0
+
+  .map-wrapper
+    height: 249px  
+
 @media only screen and (max-width: 480px)
   .steps-order__content
     padding: 40px 16px
@@ -489,6 +532,10 @@
     margin: 64px 0 40px
 
 @media only screen and (max-width: 420px)
+  header
+    .logo
+      max-width: 210px
+
   h2, .h2
     font-size: 28px
     line-height: 28px
@@ -550,10 +597,6 @@
   h1, .h1
     font-size: 32px
     line-height: 32px
-
-  header
-    .logo
-      max-width: 210px  
 
   .home-slider-arrows .slick-dots
     margin: 0 16px

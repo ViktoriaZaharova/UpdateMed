@@ -95,10 +95,6 @@ body {
   color: #192939;
 }
 
-html, body {
-  overflow-x: hidden;
-}
-
 .no-scroll {
   overflow-y: hidden;
 }
@@ -265,6 +261,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   position: relative;
   z-index: 1;
   padding: 0;
+  border: 1px solid #192939;
 }
 .btn-dark .btn-text {
   padding: 17px 20px 17px 32px;
@@ -281,7 +278,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   align-items: center;
   justify-content: center;
   transition: 0.3s ease;
-  margin: 0 0 0 auto;
+  margin: 0 -1px 0 auto;
 }
 .btn-dark:hover {
   border: 1px solid #192939;
@@ -636,6 +633,7 @@ h1, .h1 {
   font-size: 64px;
   line-height: 64px;
   font-weight: normal;
+  margin: 0 0 24px;
 }
 
 h2, .h2 {
@@ -721,6 +719,35 @@ h4, .h4 {
 }
 .list-rating li:last-child {
   margin: 0;
+}
+
+.page-home {
+  padding: 80px 0 120px;
+}
+
+.nav-breadcrumb {
+  width: 100%;
+}
+
+.breadcrumb {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "MPLUS1p", sans-serif;
+  color: rgba(19, 38, 61, 0.4);
+}
+.breadcrumb li a {
+  display: flex;
+  align-items: center;
+  color: rgba(19, 38, 61, 0.7);
+}
+.breadcrumb li a::after {
+  content: "/";
+  margin: 0 10px;
+  display: inline-block;
 }
 
 .slick-slider {

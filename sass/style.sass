@@ -46,8 +46,8 @@ body
   background: #fff
   color: $dark
 
-html, body
-  overflow-x: hidden
+// html, body
+//   overflow-x: hidden
 
 .no-scroll
   overflow-y: hidden  
@@ -181,6 +181,7 @@ button, .btn
   position: relative
   z-index: 1
   padding: 0
+  border: 1px solid $dark
   .btn-text
     padding: 17px 20px 17px 32px
     transition: .3s ease
@@ -193,7 +194,7 @@ button, .btn
     border-radius: 50%
     @include d-flex
     transition: .3s ease
-    margin: 0 0 0 auto
+    margin: 0 -1px 0 auto
   &:hover
     border: 1px solid $dark
     background: transparent
@@ -470,6 +471,7 @@ h1, .h1
   font-size: 64px
   line-height: 64px
   font-weight: normal
+  margin: 0 0 24px
 
 h2, .h2
   width: 100%
@@ -539,6 +541,31 @@ h4, .h4
     &:last-child
       margin: 0
 
+
+.page-home
+  padding: 80px 0 120px
+
+.nav-breadcrumb
+  width: 100%
+
+.breadcrumb
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 18px
+  line-height: 22px
+  font-family: $default-font
+  color: rgba(#13263D, .4)
+  li
+    a
+      display: flex
+      align-items: center
+      color: rgba(#13263D, .7)
+      &::after
+        content: '/'
+        margin: 0 10px
+        display: inline-block
 
 
 // slick slider  
