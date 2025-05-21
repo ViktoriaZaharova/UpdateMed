@@ -384,6 +384,9 @@
     margin: 48px auto 0;
     justify-content: center;
   }
+  .page-blog {
+    padding: 16px 0 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .blog-card .box-text {
@@ -546,6 +549,15 @@
   }
   .map-wrapper {
     height: 249px;
+  }
+  .pagination li a {
+    padding: 0 5px;
+  }
+  .pagination li:first-child {
+    margin: 0 10px 0 0;
+  }
+  .pagination li:last-child {
+    margin: 0 0 0 10px;
   }
 }
 @media only screen and (max-width: 480px) {

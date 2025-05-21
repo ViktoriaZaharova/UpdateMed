@@ -619,6 +619,10 @@ ul, ol {
   margin-top: 24px;
 }
 
+.mt-48 {
+  margin-top: 48px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -784,6 +788,9 @@ h4, .h4 {
 }
 .pagination li a.active {
   color: #192939;
+}
+.pagination li .pagination-arrow {
+  padding: 10px;
 }
 
 .pagination-arrow {
