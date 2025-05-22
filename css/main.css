@@ -207,6 +207,9 @@
   justify-content: center;
   padding: 10px;
 }
+.product-card__photo img {
+  max-height: 100%;
+}
 .product-card__body {
   width: 100%;
   height: calc(100% - 438px);
@@ -785,4 +788,15 @@
 
 .page-blog {
   padding: 0;
+}
+
+.product-col {
+  display: none;
+}
+.product-col:nth-child(-n+6) {
+  display: block;
+}
+
+.btn-load-products {
+  margin: 24px auto 0;
 }

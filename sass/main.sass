@@ -182,6 +182,8 @@
     border-bottom: 1px solid $gray-stroke
     @include d-flex
     padding: 10px
+    img
+      max-height: 100%
   &__body
     width: 100%
     height: calc( 100% - 438px )
@@ -663,3 +665,15 @@
 // page blog
 .page-blog
   padding: 0  
+
+// favorites page
+.product-col
+  display: none
+  &:nth-child(-n+6)
+    display: block
+
+.btn-load-products
+  margin: 24px auto 0
+
+// delivery page
+    

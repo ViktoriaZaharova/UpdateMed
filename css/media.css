@@ -551,13 +551,23 @@
     height: 249px;
   }
   .pagination li a {
-    padding: 0 5px;
+    padding: 0 7px;
   }
   .pagination li:first-child {
     margin: 0 10px 0 0;
   }
   .pagination li:last-child {
     margin: 0 0 0 10px;
+  }
+  .btn-load-products {
+    margin: 0 auto;
+  }
+  .accordion-item {
+    padding: 16px;
+    margin: 0 0 16px;
+  }
+  .mb-64 {
+    margin-bottom: 24px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -599,6 +609,10 @@
     font-size: 28px;
     line-height: 28px;
   }
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 20px;
+  }
   .seo-content h2, .seo-content .h2 {
     font-size: 24px;
     line-height: 26px;
@@ -630,6 +644,11 @@
   .advantages-box .box-text {
     font-size: 14px;
     line-height: normal;
+  }
+  .accordion-button:after {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
   }
 }
 @media only screen and (max-width: 370px) {

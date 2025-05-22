@@ -454,11 +454,14 @@ ul, ol
 .mb-48
   margin-bottom: 48px
 
+.mb-64
+  margin-bottom: 64px  
+
 .mt-24
-  margin-top: 24px  
+  margin-top: 24px
 
 .mt-48
-  margin-top: 48px  
+  margin-top: 48px
 
 .ml-auto
   margin-left: auto
@@ -595,7 +598,7 @@ h4, .h4
       &.active
         color: $dark
     .pagination-arrow
-      padding: 10px    
+      padding: 10px
 
 .pagination-arrow
   width: 52px
@@ -619,6 +622,49 @@ h4, .h4
     background: $gray-stroke
     fill: $dark
     opacity: 0.5
+
+.accordion-item
+  width: 100%
+  margin: 0 0 32px
+  background: $white
+  border-radius: 24px
+  padding: 32px
+  &:first-child, &:last-child
+    border-radius: 24px
+
+.accordion-body
+  padding: 16px 0 0
+  width: 100%
+  color: $dark40
+
+.accordion-header
+  display: flex
+  align-items: center
+
+.accordion-button
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0
+  &:after
+    content: ''
+    @include d-flex
+    border-radius: 50%
+    margin: 0 0 0 auto
+    padding: 10px
+    width: 52px
+    height: 52px
+    min-width: 52px
+    background: $gray url('../img/minus.svg') no-repeat center
+    background-size: 32px
+  &.collapsed
+    &:after
+      background: $gray url('../img/plus.svg') no-repeat center
+      background-size: 32px
+
+.accordion-button:not(.collapsed)::after
+  background: $gray url('../img/minus.svg') no-repeat center
+  background-size: 32px
 
 // slick slider  
 .slick-slider

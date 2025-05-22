@@ -21,6 +21,15 @@ $('.btn-toggler').on('click', function (e) {
   }
 });
 
+$('.btn-load-products').on('click', function (e) {
+  e.preventDefault();
+  $(this).parents('.page-favorite').find('.product-col:hidden').slice(0, 3).slideDown();
+
+  var onBlock = $(this).parents('.page-favorite').find('.product-col:hidden').length;
+  if (onBlock <= 0) {
+    $(this).hide();
+  }
+});
 // show list all
 
 
