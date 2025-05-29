@@ -262,14 +262,24 @@
   &__img
     position: absolute
     z-index: -1
-    bottom: 0
-    right: 0
+    top: 35px
+    right: -100px
+    width: 100%
+
   &__name
     color: $dark
-    margin: 24px 0 0
-    max-width: 195px
+    line-height: 20px
     &:hover
       color: $accent
+  &__content
+    max-width: 195px
+    width: 100%
+    margin: 24px 0 0
+    .box-text
+      font-size: 14px
+      line-height: 14px
+      color: $dark40
+      margin: 4px 0 0
   &:hover
     background: $gray
     .btn-link-white
@@ -288,16 +298,129 @@
     fill: $accent-second
     background: $light-gray
 
+.popular-card-v3
+  .popular-card
+    &__name
+      font-weight: bold
+      color: $dark
+      margin: 0
+
+.popular-card1
+  .popular-card
+    &__img
+      min-width: 354px
+
+.popular-card2
+  .popular-card
+    &__img
+      max-width: 490px
+      right: -86px
+      top: 45px
+
+.popular-card3
+  .popular-card
+    &__img
+      right: auto
+      left: 58px
+      top: -10px
+      min-width: 538px
+      max-width: 100%
+
+    &__name
+      color: $dark
+      font-weight: bold
+
+.popular-card4
+  .popular-card
+    &__img
+      right: -30px
+      top: 0
+      min-width: 354px
+      max-width: 354px
+
+.popular-card6
+  .popular-card
+    &__img
+      max-width: 212px
+      right: 10px
+      top: -45px
+
+.popular-card7
+  .popular-card
+    &__img
+      max-width: 354px
+      top: 30px
+      right: -20px
+
+.popular-card8
+  .popular-card
+    &__img
+      max-width: 354px
+      top: 30px
+      right: -20px
+
+.popular-card9
+  .popular-card
+    &__img
+      max-width: 230px
+      top: 20px
+      right: 40px
+
+.popular-card10
+  .popular-card
+    &__img
+      min-width: 354px
+      right: -80px
+      top: 10px
+
+.popular-card11
+  .popular-card
+    &__img
+      max-width: 354px
+      right: -30px
+      top: 0
+
+.popular-card13
+  .popular-card
+    &__img
+      max-width: 354px
+      right: -30px
+      top: 20px
+
+.popular-card15
+  .popular-card
+    &__img
+      max-width: 191px
+      right: 50px
+      top: -45px
+
+.popular-card16
+  .popular-card
+    &__img
+      max-width: 354px
+      right: -40px
+      top: 30px
+
+.popular-card17
+  .popular-card
+    &__img
+      max-width: 420px
+      top: auto
+      bottom: -15px
+      right: -147px
+
 .popular-card-all
   background: $accent
   .popular-card__img
     top: 46px
     right: 52px
     bottom: auto
+    width: fit-content
   .popular-card__name
     color: $white
     max-width: 240px
     margin: 0
+    line-height: normal
   &::before, &:after
     background: $white
   &:hover
@@ -334,13 +457,13 @@
   max-width: 87px
 
 .brand-logo7
-  max-width: 140px      
+  max-width: 140px
 
 .brand-logo9
-  max-width: 209px    
+  max-width: 209px
 
 .brand-logo14
-  max-width: 112px    
+  max-width: 112px
 
 .brand-logo15
   max-width: 214px
@@ -383,7 +506,7 @@
     width: 236px
     max-height: 278px
     padding: 0 15px
-    
+
     img
       max-height: 100%
   &__body
@@ -543,8 +666,6 @@
       strong
         display: inline
 
-
-
 .list-advantages
   width: 100%
   &-item
@@ -619,7 +740,6 @@
   &__text
     padding: 0 0 0 24px
 
-
 // contacts page
 .map-wrapper
   width: 100%
@@ -631,7 +751,7 @@
   iframe
     width: 100%
     height: 100%
-    object-fit: cover    
+    object-fit: cover
 
 .page-contacts
   .list-messengers
@@ -640,11 +760,10 @@
     width: 100%
     height: 100%
     display: flex
-    flex-direction: column  
+    flex-direction: column
 
 .address-item
   margin: auto 0 0
-
 
 .contacts-item
   margin: 0 0 24px
@@ -664,7 +783,7 @@
 
 // page blog
 .page-blog
-  padding: 0  
+  padding: 0
 
 // favorites page
 .product-col
@@ -675,5 +794,34 @@
 .btn-load-products
   margin: 24px auto 0
 
-// delivery page
-    
+// brands page
+.brand-item
+  width: 100%
+  height: 240px
+  padding: 40px
+  @include d-flex
+  border-radius: 32px
+  overflow: hidden
+  background: url('../img/brand-bg1.jpg') no-repeat center
+  background-size: cover
+  img
+    max-height: 100%
+
+.brand-card-all
+  height: 240px
+  background: $dark
+  padding: 32px
+  min-height: auto
+
+.brand-item2
+  background: url('../img/brand-bg2.jpg') no-repeat center
+  background-size: cover
+
+.brand-item3
+  background: url('../img/brand-bg3.jpg') no-repeat center
+  background-size: cover  
+
+.brand-col
+  display: none
+  &:nth-child(-n+5)
+    display: flex

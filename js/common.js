@@ -30,6 +30,16 @@ $('.btn-load-products').on('click', function (e) {
     $(this).hide();
   }
 });
+
+$('.brand-card-all').on('click', function (e) {
+  e.preventDefault();
+  $(this).parents('.brands-row').find('.brand-col:hidden').slice(0, 2).slideDown();
+
+  var onBlock = $(this).parents('.brands-row').find('.brand-col:hidden').length;
+  if (onBlock <= 0) {
+    $(this).hide();
+  }
+});
 // show list all
 
 

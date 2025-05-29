@@ -346,6 +346,53 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   fill: #fff;
 }
 
+.btn-border-gray-stroke {
+  border: 1px solid #afc7ce;
+  color: #afc7ce;
+  background: #fff;
+}
+.btn-border-gray-stroke .btn-icon-arrow {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  padding: 3.4px;
+  border: 1px solid #afc7ce;
+  fill: #afc7ce;
+}
+.btn-border-gray-stroke:hover {
+  background: #192939;
+  border-color: #192939;
+  color: #fff;
+}
+.btn-border-gray-stroke:hover .btn-icon-arrow {
+  fill: #fff;
+  border-color: #fff;
+}
+.btn-border-gray-stroke:focus {
+  background: #6ac1ef;
+  color: #fff;
+  border-color: #fff;
+}
+.btn-border-gray-stroke:focus .btn-icon-a {
+  border-color: #fff;
+  fill: #fff;
+}
+.btn-border-gray-stroke:disabled {
+  opacity: 0.5;
+  background: transparent;
+  color: #7cc1e5;
+  border-color: transparent;
+}
+.btn-border-gray-stroke:disabled .btn-text {
+  background: #fff;
+  border-radius: 32px;
+}
+.btn-border-gray-stroke:disabled .btn-icon-arrow {
+  border-color: #fff;
+  fill: #fff;
+  background: transparent;
+}
+
 .btn-accent {
   background: #6ac1ef;
   color: #fff;
@@ -615,6 +662,10 @@ ul, ol {
   margin-bottom: 48px;
 }
 
+.mb-55 {
+  margin-bottom: 55px;
+}
+
 .mb-64 {
   margin-bottom: 64px;
 }
@@ -625,6 +676,10 @@ ul, ol {
 
 .mt-48 {
   margin-top: 48px;
+}
+
+.mt-120 {
+  margin-top: 120px;
 }
 
 .ml-auto {
@@ -731,6 +786,20 @@ h4, .h4 {
 }
 .list-rating li:last-child {
   margin: 0;
+}
+
+.title-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 0 57px;
+}
+.title-wrapper h1 {
+  margin: 0;
+}
+.title-wrapper__button {
+  margin-left: auto;
 }
 
 .page-home {

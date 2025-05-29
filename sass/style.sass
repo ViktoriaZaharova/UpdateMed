@@ -244,6 +244,44 @@ button, .btn
     .btn-icon
       fill: $white
 
+.btn-border-gray-stroke
+  border: 1px solid $gray-stroke
+  color: $gray-stroke
+  background: $white
+  .btn-icon-arrow
+    width: 52px
+    height: 52px
+    min-width: 52px
+    padding: 3.4px
+    border: 1px solid $gray-stroke
+    fill: $gray-stroke
+  &:hover
+    background: $dark
+    border-color: $dark
+    color: $white
+    .btn-icon-arrow
+      fill: $white
+      border-color: $white
+  &:focus
+    background: $accent
+    color: $white
+    border-color: $white
+    .btn-icon-a
+      border-color: $white
+      fill: $white
+  &:disabled
+    opacity: 0.5
+    background: transparent
+    color: $accent-second
+    border-color: transparent
+    .btn-text
+      background: $white
+      border-radius: 32px
+    .btn-icon-arrow
+      border-color: $white
+      fill: $white
+      background: transparent 
+
 .btn-accent
   background: $accent
   color: $white
@@ -454,14 +492,20 @@ ul, ol
 .mb-48
   margin-bottom: 48px
 
+.mb-55
+  margin-bottom: 55px
+
 .mb-64
-  margin-bottom: 64px  
+  margin-bottom: 64px
 
 .mt-24
   margin-top: 24px
 
 .mt-48
   margin-top: 48px
+
+.mt-120
+  margin-top: 120px
 
 .ml-auto
   margin-left: auto
@@ -547,6 +591,17 @@ h4, .h4
     min-width: 16px
     &:last-child
       margin: 0
+
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 57px
+  h1
+    margin: 0 
+  &__button
+    margin-left: auto     
 
 .page-home
   padding: 80px 0 120px
@@ -727,6 +782,9 @@ h4, .h4
   .slick-slide
     padding: 0 9px
     height: auto
+
+
+
 
 //checkbox my
 .label-checkbox
