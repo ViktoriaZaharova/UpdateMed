@@ -17,6 +17,9 @@
   .menu
     font-size: 16px
 
+  .article-title
+    padding: 0
+
 @media only screen and (max-width: 1400px)
   .footer-contacts-item a
     font-size: 26px
@@ -82,6 +85,17 @@
 
   .form-search
     max-width: 250px
+
+  .article-head__img
+    height: auto
+    margin: 0 0 24px
+
+  .article-head__date
+    margin: 24px 0 0
+
+  .article-body
+    margin: 24px 0 0
+    max-width: none
 
 @media only screen and (max-width: 1200px)
   h1, .h1
@@ -220,6 +234,9 @@
     padding: 16px 0
     .form-search, .mail-link, .phone-link, .link-callback
       display: none
+
+  .page-article
+    padding: 16px 0 0
 
 @media only screen and (max-width: 992px)
   footer
@@ -380,7 +397,20 @@
     &:nth-child(-n+6)
       display: flex
 
+  .page-article
+    padding: 16px 0 0
+    .wrapper-bg
+      padding: 16px 0 64px
+
+  .article-title .breadcrumb
+    margin: 0 0 24px
+    flex-wrap: wrap
+
 @media only screen and (max-width: 768px)
+  h1, .h1
+    font-size: 45px
+    line-height: 45px
+
   .blog-card
     .box-text
       font-size: 14px
@@ -393,11 +423,32 @@
   .brand-card-all
     height: 200px
 
+  .blockquote
+    margin: 16px 0
+    padding: 32px 128px 32px 32px
+    &::before
+      width: 80px
+      height: 60px
+      top: 32px
+      right: 32px
+
+  .article-image, .video-box
+    margin: 16px 0
+
+  .box-text-big
+    font-size: 28px
+    line-height: 32px
+
 @media only screen and (max-width: 576px)
   h1, .h1
     font-size: 40px
     line-height: 40px
     margin: 0 0 16px
+
+  .page-article
+    h1, .h1
+      font-size: 36px
+      line-height: 36px
 
   h2, .h2
     font-size: 32px
@@ -633,6 +684,13 @@
   .brand-card-all
     height: 152px
 
+  .box-text-big
+    font-size: 24px
+    line-height: 26px
+
+  .article-slider
+    margin: 16px 0 0  
+
 @media only screen and (max-width: 480px)
   .steps-order__content
     padding: 40px 16px
@@ -660,6 +718,11 @@
 
   .advantages-section
     margin: 64px 0 40px
+
+  .page-article
+    h1, .h1
+      font-size: 30px
+      line-height: 30px
 
 @media only screen and (max-width: 420px)
   header
@@ -712,6 +775,11 @@
   .btn-dark .btn-text
     padding: 10px 15px 10px 22px
 
+  .page-article
+    h1, .h1
+      font-size: 24px
+      line-height: 24px
+
 @media only screen and (max-width: 370px)
   .mission-section
     h2, .h2
@@ -742,3 +810,15 @@
 
   .home-slider-arrows .slick-dots
     margin: 0 16px
+
+  .blockquote
+    padding: 20px 80px 20px 20px
+    &::before
+      width: 50px
+      height: 40px
+      right: 20px
+      top: 20px
+
+  .page-article h1, .page-article .h1
+    font-size: 20px
+    line-height: 20px
