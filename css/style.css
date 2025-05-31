@@ -712,6 +712,9 @@ ul, ol {
 .wrapper-bg.bg-light {
   background: #f7f8f9;
 }
+.wrapper-bg.bg-light-gray {
+  background: #eff3f6;
+}
 
 h1, .h1 {
   width: 100%;
@@ -776,6 +779,10 @@ h4, .h4 {
 
 .color-dark60 {
   color: rgba(25, 41, 57, 0.6);
+}
+
+.color-dark40 {
+  color: rgba(25, 41, 57, 0.4);
 }
 
 .bg-white {

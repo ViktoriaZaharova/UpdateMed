@@ -740,6 +740,9 @@
   color: #6ac1ef;
 }
 
+.seo-content {
+  overflow: hidden;
+}
 .seo-content__wrapper {
   background: #fff;
   width: 100%;
@@ -956,12 +959,16 @@
 }
 
 .page-article {
+  overflow: hidden;
   padding: 0;
 }
 
 .article-head__img {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 14px;
   overflow: hidden;
 }
@@ -988,12 +995,14 @@
   padding: 0 0 0 48px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 .article-title .breadcrumb {
   margin: 0 0 48px;
 }
 .article-title h1 {
-  margin: 0 0 auto;
+  margin: 0;
 }
 
 .article-body {
@@ -1005,6 +1014,7 @@
 
 .article-image {
   width: 100%;
+  height: 640px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1095,7 +1105,14 @@
 }
 
 .article-slider {
-  margin: 32px 0 0;
+  margin: 32px 0;
+}
+.article-slider .slick-arrow {
+  border-color: #afc7ce;
+  fill: #afc7ce;
+}
+.article-slider .slick-arrow:hover {
+  fill: #192939;
 }
 .article-slider .slick-next {
   right: -25px;
