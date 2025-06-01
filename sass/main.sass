@@ -156,6 +156,9 @@
     margin: 48px 0 0
 
 // hits section
+.hits-section
+  overflow: hidden
+
 .btn-add-basket
   .svg-icon
     margin: 0 0 0 8px
@@ -951,7 +954,7 @@
     border-radius: 24px
 
 .article-slider
-  margin: 32px 0 
+  margin: 32px 0
   .slick-arrow
     border-color: $gray-stroke
     fill: $gray-stroke
@@ -972,5 +975,73 @@
       height: 100%
       object-fit: cover
       border-radius: 24px
-      
-// warranty page
+
+// brand page
+.page-brand
+  padding: 0
+
+.blog-page-description
+  width: 100%
+  background: $white
+  border-radius: 18px
+  padding: 32px
+  line-height: 22px
+  color: $dark60
+  strong
+    color: $dark
+
+.brand-text-description
+  .link-load-more
+    display: none
+    margin: 10px 0 0
+  
+
+
+.row-goods-catalog
+  .product-col
+    display: none
+    &:nth-child(-n+8)
+      display: flex
+
+// page-category
+.page-category
+  .box-text
+    max-width: 522px
+  .blog-page-description
+    max-width: 522px
+    margin: 24px 0 0    
+  .wrapper-bg
+    position: relative
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      z-index: -1
+      right: 193px
+      top: 0
+      background: url('../img/category-home-img.png') no-repeat center
+      background-size: cover
+      width: 934px
+      height: 100%
+
+.btn-group-filter
+  justify-content: flex-end
+  .btn
+    width: fit-content
+    flex: none
+    border-color: $dark40
+    color: $dark40
+    .btn-icon
+      fill: $dark40
+    &.active
+      color: $dark
+      border-color: $dark  
+      .btn-icon
+        fill: $dark  
+    &:hover
+      color: $white
+      .btn-icon
+        fill: $white     
+  .btn-icon
+    margin: 0 0 0 8px
+

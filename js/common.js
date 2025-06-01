@@ -23,9 +23,9 @@ $('.btn-toggler').on('click', function (e) {
 
 $('.btn-load-products').on('click', function (e) {
   e.preventDefault();
-  $(this).parents('.page-favorite').find('.product-col:hidden').slice(0, 3).slideDown();
+  $(this).parents('.row-catalog').find('.product-col:hidden').slice(0, 3).slideDown();
 
-  var onBlock = $(this).parents('.page-favorite').find('.product-col:hidden').length;
+  var onBlock = $(this).parents('.row-catalog').find('.product-col:hidden').length;
   if (onBlock <= 0) {
     $(this).hide();
   }
@@ -49,20 +49,56 @@ $('.link-load-more').on('click', function (e) {
 
   var
     $this = $(this),
-    content = $(this).parents('.reviews-card').find('.box-text');
+    content = $(this).parents('.reviews-card').find('.box-text'),
+    content2 = $(this).parent('.page-brand');
 
   if (!$this.hasClass('trigger')) {
     $this.addClass('trigger');
-    $this.find('span').html('Скрыть');
+    $this.hide();
 
     content.addClass('open');
+    content2.addClass('open');
   } else {
     $this.removeClass('trigger');
-    $this.find('span').html('Показать еще');
+    // $this.find('span').html('Показать еще');
 
     content.removeClass('open');
+    content2.removeClass('open');
   }
 });
+
+// hidden list > 5
+	$('.brand-text-description').each(function () {
+		if ($(this).length > 6) {
+				$(this).find('li').slice(6).hide();
+				$(this).parent('.submenu').append('<button class="box-dots">Показать ещё</button>');
+		}
+});
+
+// hidden list > 5
+
+// show list all
+$('.box-dots').on('click', function(e){
+  e.preventDefault();
+  
+  var
+    $this = $(this),
+    content = $(this).parent().find('ul li');  
+  
+  
+  if(!$this.hasClass('trigger')){
+    $this.addClass('trigger');
+    $this.html('Скрыть');
+    
+    content.slideDown();
+  } else {
+    $this.removeClass('trigger');
+    $this.html('Показать ещё');
+    
+    content.slice(6).slideUp();
+  }
+});
+// show list all
 
 // slick slider
 $('.hits-slider').slick({
