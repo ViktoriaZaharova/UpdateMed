@@ -68,33 +68,33 @@ $('.link-load-more').on('click', function (e) {
 });
 
 // hidden list > 5
-	$('.brand-text-description').each(function () {
-		if ($(this).length > 6) {
-				$(this).find('li').slice(6).hide();
-				$(this).parent('.submenu').append('<button class="box-dots">Показать ещё</button>');
-		}
+$('.brand-text-description').each(function () {
+  if ($(this).length > 6) {
+    $(this).find('li').slice(6).hide();
+    $(this).parent('.submenu').append('<button class="box-dots">Показать ещё</button>');
+  }
 });
 
 // hidden list > 5
 
 // show list all
-$('.box-dots').on('click', function(e){
+$('.box-dots').on('click', function (e) {
   e.preventDefault();
-  
+
   var
     $this = $(this),
-    content = $(this).parent().find('ul li');  
-  
-  
-  if(!$this.hasClass('trigger')){
+    content = $(this).parent().find('ul li');
+
+
+  if (!$this.hasClass('trigger')) {
     $this.addClass('trigger');
     $this.html('Скрыть');
-    
+
     content.slideDown();
   } else {
     $this.removeClass('trigger');
     $this.html('Показать ещё');
-    
+
     content.slice(6).slideUp();
   }
 });
@@ -167,9 +167,37 @@ $('.article-slider').slick({
   ]
 });
 
+$('.product-gallery-max').slick({
+  slidesToShow: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.product-gallery-preview',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        dots: true,
+        arrows: true,
+        prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+        nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>'
+      }
+    }
+  ]
+});
+
+$('.product-gallery-preview').slick({
+  slidesToShow: 3,
+  arrows: true,
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  vertical: true,
+  asNavFor: '.product-gallery-max',
+  focusOnSelect: true
+});
 
 // mobile menu
-$('.btn-burger').on('click', function(e){
+$('.btn-burger').on('click', function (e) {
   e.preventDefault();
   $('html, body').toggleClass('no-scroll');
   $(this).toggleClass('click');

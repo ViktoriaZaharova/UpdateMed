@@ -657,6 +657,7 @@ h4, .h4
   line-height: 22px
   font-family: $default-font
   color: rgba(#13263D, .4)
+  margin: 0
   li
     a
       display: flex
@@ -756,6 +757,9 @@ h4, .h4
       background: $gray url('../img/plus.svg') no-repeat center
       background-size: 32px
 
+.accordion-button:not(.collapsed)
+  color: $dark      
+
 .accordion-button:not(.collapsed)::after
   background: $gray url('../img/minus.svg') no-repeat center
   background-size: 32px
@@ -821,6 +825,35 @@ h4, .h4
   .slick-slide
     padding: 0 9px
     height: auto
+
+.slick-dots
+  position: absolute
+  z-index: 1
+  opacity: 1
+  width: 100%
+  list-style: none
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  left: 0
+  bottom: 12px
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 8px
+    height: 8px
+    min-width: 8px
+    margin: 0 9px 0 0
+    border-radius: 50%
+    background: rgba(#AFC7CE, .4)
+    &.slick-active
+      background: $accent
+    &:last-child
+      margin: 0
+    button
+      display: none
+
 
 .select-my
   width: fit-content

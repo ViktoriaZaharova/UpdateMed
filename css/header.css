@@ -24,7 +24,7 @@ header {
   margin: 0;
 }
 .menu-user li a {
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
 }
 .menu-user li a:hover {
   color: #6ac1ef;
@@ -53,7 +53,7 @@ header {
   min-width: 60px;
   background: #eff3f6;
   border-radius: 16px;
-  fill: rgba(25, 41, 57, 0.6);
+  fill: rgba(25, 41, 57, 0.8);
   padding: 4px;
 }
 .menu-navigation-link__val {
@@ -118,7 +118,7 @@ header {
   font-size: 18px;
   font-weight: 500;
   font-family: "Onest", sans-serif;
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
   letter-spacing: 0.6px;
   margin: 0 56px 0 0;
 }
@@ -141,7 +141,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   text-decoration: underline;
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
   letter-spacing: 0.6px;
 }
 .link-callback:hover {
@@ -290,5 +290,5 @@ header {
 }
 .mobile-menu .mail-link {
   margin: 0 auto;
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
 }

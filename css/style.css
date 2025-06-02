@@ -789,7 +789,7 @@ h4, .h4 {
 }
 
 .color-dark60 {
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
 }
 
 .color-dark40 {
@@ -870,6 +870,7 @@ h4, .h4 {
   line-height: 22px;
   font-family: "MPLUS1p", sans-serif;
   color: rgba(19, 38, 61, 0.4);
+  margin: 0;
 }
 .breadcrumb li a {
   display: flex;
@@ -905,7 +906,7 @@ h4, .h4 {
   color: #6ac1ef;
 }
 .pagination li a:focus {
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
 }
 .pagination li a:disabled {
   color: rgba(25, 41, 57, 0.4);
@@ -993,6 +994,10 @@ h4, .h4 {
   background-size: 32px;
 }
 
+.accordion-button:not(.collapsed) {
+  color: #192939;
+}
+
 .accordion-button:not(.collapsed)::after {
   background: #e4ecf3 url("../img/minus.svg") no-repeat center;
   background-size: 32px;
@@ -1072,6 +1077,39 @@ h4, .h4 {
   height: auto;
 }
 
+.slick-dots {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 12px;
+}
+.slick-dots li {
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  margin: 0 9px 0 0;
+  border-radius: 50%;
+  background: rgba(175, 199, 206, 0.4);
+}
+.slick-dots li.slick-active {
+  background: #6ac1ef;
+}
+.slick-dots li:last-child {
+  margin: 0;
+}
+.slick-dots li button {
+  display: none;
+}
+
 .select-my {
   width: -moz-fit-content;
   width: fit-content;
@@ -1079,7 +1117,7 @@ h4, .h4 {
   background-size: 32px;
   padding: 15px 48px 15px 24px;
   height: 52px;
-  border: 1px solid rgba(25, 41, 57, 0.6);
+  border: 1px solid rgba(25, 41, 57, 0.8);
   border-radius: 32px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1101,10 +1139,10 @@ h4, .h4 {
   background: #fff;
   display: flex;
   align-items: center;
-  border: 1px solid rgba(25, 41, 57, 0.6);
+  border: 1px solid rgba(25, 41, 57, 0.8);
   border-radius: 32px;
   height: 52px;
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
   padding: 10px 15px 10px 24px;
   font-size: 18px;
   line-height: 22px;
@@ -1168,7 +1206,7 @@ h4, .h4 {
   position: relative;
   display: flex;
   align-items: flex-start;
-  color: rgba(25, 41, 57, 0.6);
+  color: rgba(25, 41, 57, 0.8);
   font-size: 14px;
   font-weight: 300;
   line-height: 16px;
@@ -1203,7 +1241,7 @@ h4, .h4 {
   margin: 0 8px 0 0;
   position: relative;
   border-radius: 0;
-  border: 1px solid rgba(25, 41, 57, 0.6);
+  border: 1px solid rgba(25, 41, 57, 0.8);
   background: transparent;
   width: 18px;
   height: 18px;
