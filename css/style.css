@@ -448,7 +448,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
   position: relative;
   z-index: 1;
-  border: 1px solid #6ac1ef;
+  border: none;
   padding: 0;
 }
 .btn-accent-v2 .btn-text {
@@ -474,7 +474,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   height: 100%;
 }
 .btn-accent-v2:hover {
-  border-color: #6ac1ef;
+  border: 1px solid #6ac1ef;
   background: transparent;
   color: #6ac1ef;
 }
@@ -488,7 +488,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-accent-v2:focus {
   background: #192939;
   color: #fff;
-  border-color: #192939;
+  border: 1px solid #192939;
 }
 .btn-accent-v2:focus .btn-icon-arrow {
   border-color: #fff;
@@ -498,7 +498,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transform: rotate(45deg);
 }
 .btn-accent-v2.disabled {
-  border-color: transparent;
+  border: none;
   background: transparent;
   color: #fff;
   opacity: 0.5;
@@ -643,7 +643,7 @@ ul, ol {
 }
 
 .row {
-  margin: 0 -24px;
+  margin: 0 -12px;
 }
 .row > * {
   padding: 0 12px;
@@ -772,6 +772,11 @@ h4, .h4 {
 }
 .box-text p:last-child {
   margin: 0;
+}
+
+.box-text-small {
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .box-text-big {

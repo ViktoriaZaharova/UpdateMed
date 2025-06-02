@@ -1,5 +1,22 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1820px) {
+  .menu-link {
+    padding: 20px 15px;
+  }
+  .home-slider-image__item {
+    padding: 20px;
+    height: 600px;
+  }
+  .home-slider-image__item img {
+    max-height: 100%;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  .menu {
+    font-size: 16px;
+  }
+}
 @media only screen and (max-width: 1550px) {
   .form-search {
     max-width: 350px;
@@ -23,10 +40,13 @@
     right: 0;
   }
   .menu {
-    font-size: 16px;
+    font-size: 14px;
   }
   .menu-link {
     padding: 20px 10px;
+  }
+  .home-slider-image__item {
+    height: 500px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -99,7 +119,7 @@
     font-size: 22px;
   }
   .form-search {
-    max-width: 250px;
+    max-width: 240px;
   }
   .article-head__img {
     height: auto;
@@ -111,6 +131,12 @@
   .article-body {
     margin: 24px 0 0;
     max-width: none;
+  }
+  .menu-link {
+    padding: 20px 7px;
+  }
+  .menu {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -312,6 +338,9 @@
   }
   .product-gallery-max .slick-prev {
     left: 12px;
+  }
+  .home-slider-image__item {
+    height: 350px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -595,6 +624,10 @@
   .list-characteristics li p, .list-characteristics li span {
     padding: 0;
   }
+  .home-slider-item__img {
+    height: 700px;
+    padding: 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -644,6 +677,12 @@
     overflow: visible;
     line-clamp: none;
     -webkit-line-clamp: none;
+  }
+  .home-slider-item__img {
+    height: 500px;
+  }
+  .home-slider-item__img img {
+    max-height: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -946,6 +985,9 @@
   .product-content__nav {
     margin: 0;
   }
+  .home-slider-item__img {
+    height: 400px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .steps-order__content {
@@ -980,6 +1022,9 @@
   .page-article h1, .page-article .h1 {
     font-size: 30px;
     line-height: 30px;
+  }
+  .home-slider-item__img {
+    height: 330px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -1106,5 +1151,8 @@
   }
   .seo-content h2, .seo-content .h2 {
     font-size: 22px;
+  }
+  .home-slider-item__img {
+    height: 250px;
   }
 }
