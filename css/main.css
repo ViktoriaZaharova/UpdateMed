@@ -1635,3 +1635,70 @@
 .form-basket h4 {
   margin: 0 0 24px;
 }
+
+.page-comparison {
+  overflow: hidden;
+}
+
+.comparison-products-slider {
+  min-width: calc(100% + 354px);
+}
+.comparison-products-slider .slick-slide {
+  width: 370px;
+}
+.comparison-products-slider .slick-prev {
+  left: 340px;
+}
+.comparison-products-slider .slick-next {
+  right: 330px;
+}
+.comparison-products-slider .product-card {
+  width: 354px;
+}
+
+.comparison-characteristics-slider {
+  font-size: 18px;
+  background: #fff;
+  border-radius: 16px;
+  margin: 0 0 16px;
+}
+.comparison-characteristics-slider:last-child {
+  margin: 0;
+}
+
+.comparison-characteristics__name {
+  width: 100%;
+  font-size: 18px;
+  margin: 0 0 12px;
+  display: none;
+}
+
+.comparison-list-characteristics li {
+  background: #fff;
+  padding: 16px;
+  margin: 0 0 16px;
+}
+.comparison-list-characteristics li:last-child {
+  margin: 0;
+}
+
+.comparison-characteristics-slider__item {
+  width: 354px;
+  padding: 16px;
+}
+.comparison-characteristics-slider__item p {
+  text-align: center;
+  margin: 0;
+}
+
+.comparison-characteristics-slider__item-title {
+  text-align: left;
+}
+
+.comparison-characteristics {
+  min-width: 1873px;
+  background: #eff3f6;
+  border-radius: 24px;
+  padding: 16px;
+  margin: 48px 0 0;
+}

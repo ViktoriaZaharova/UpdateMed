@@ -615,7 +615,32 @@
 
   .amount
     order: 1
-    margin: 0 0 0 auto    
+    margin: 0 0 0 auto
+
+  .comparison-products-slider
+    padding: 0 0 68px
+    min-width: calc( 100% + 16px )
+
+    .slick-arrow
+      transform: none
+      top: auto
+      bottom: 0
+    .slick-prev
+      left: 0
+    .slick-next
+      right: auto
+      left: 68px
+
+  .comparison-characteristics__name
+    display: block
+
+  .comparison-characteristics-slider, .comparison-products-slider
+    .slick-slide
+      &:first-child
+        display: none
+
+  .comparison-products-slider .slick-slide
+    width: auto      
 
 @media only screen and (max-width: 768px)
   h1, .h1
@@ -962,15 +987,23 @@
   .home-slider-item__img
     height: 400px
 
-
   .p-80
     padding: 64px 0
-
 
   .total-box
     padding: 24px
     &__sum
       margin: 16px 0 0
+
+  .comparison-products-slider .product-card
+    width: 260px
+    .btn-add-basket
+      padding: 15px 20px
+      .svg-icon
+        display: none
+
+  .comparison-characteristics-slider__item
+    width: 260px
 
 @media only screen and (max-width: 480px)
   .steps-order__content
@@ -1132,7 +1165,7 @@
 
   .product-card-row
     flex-direction: column
-    align-items: flex-start  
+    align-items: flex-start
 
   .home-slider-item__img
     height: 250px
@@ -1145,7 +1178,6 @@
     top: 0
     height: auto
 
-
   .product-card-row__text
     padding: 0
 
@@ -1156,5 +1188,3 @@
     margin: 0 0 10px
     order: 0
     width: 100%
-
-

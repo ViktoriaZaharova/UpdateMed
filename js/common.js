@@ -196,6 +196,81 @@ $('.product-gallery-preview').slick({
   focusOnSelect: true
 });
 
+
+
+$('.comparison-products-slider').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: true,
+  infinite: false,
+  asNavFor: '.comparison-characteristics-slider',
+  // appendArrows: '.comparison-products-slider-arrows',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+  
+});
+
+$('.comparison-characteristics-slider1').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+ 
+});
+
+$('.comparison-characteristics-slider2').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+  
+});
+
+$('.comparison-characteristics-slider3').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+ 
+});
+
+$('.comparison-characteristics-slider4').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+  
+});
+
+$('.comparison-characteristics-slider5').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+  
+});
+
+$('.comparison-characteristics-slider6').slick({
+  slidesToShow: 1,
+  variableWidth: true,
+  arrows: false,
+  swipe: false,
+  swipeToSlide: false,
+  infinite: false,
+  
+  // asNavFor: '.comparison-characteristics-slider7'
+});
+
 // mobile menu
 $('.btn-burger').on('click', function (e) {
   e.preventDefault();
@@ -211,19 +286,19 @@ Fancybox.bind("[data-fancybox]", {
 
 // amount
 $('.down').on("click", function () {
-    let $input = $(this).parent().find('input');
-    let count = parseInt($input.val()) - 1;
-    count = count < 1 ? 1 : count;
-    $input.val(count);
-    $input.change();
-    return false;
+  let $input = $(this).parent().find('input');
+  let count = parseInt($input.val()) - 1;
+  count = count < 1 ? 1 : count;
+  $input.val(count);
+  $input.change();
+  return false;
 });
-$('.up').on("click",function () {
-    let $input = $(this).parent().find('input');
-    $input.val(parseInt($input.val()) + 1);
-    $input.change();
-    return false;
+$('.up').on("click", function () {
+  let $input = $(this).parent().find('input');
+  $input.val(parseInt($input.val()) + 1);
+  $input.change();
+  return false;
 });
 $('.amount input').on('input', function () {
-	$(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
+  $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
