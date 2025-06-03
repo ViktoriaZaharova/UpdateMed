@@ -194,8 +194,8 @@ label:last-child {
 
 textarea {
   resize: none;
-  padding: 12px 17px;
-  height: 103px;
+  padding: 16px 24px;
+  height: 140px;
 }
 
 .form-callback {
@@ -872,7 +872,7 @@ h4, .h4 {
   align-items: flex-start;
   flex-wrap: nowrap;
   font-size: 18px;
-  line-height: 22px;
+  line-height: normal;
   font-family: "MPLUS1p", sans-serif;
   color: rgba(19, 38, 61, 0.4);
   margin: 0;

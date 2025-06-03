@@ -15,6 +15,8 @@
   .menu
     font-size: 16px
 
+  .product-card-row__img
+    height: auto
 
 @media only screen and (max-width: 1550px)
   .form-search
@@ -45,7 +47,7 @@
     padding: 20px 10px
 
   .home-slider-image__item
-    height: 500px    
+    height: 500px
 
 @media only screen and (max-width: 1400px)
   .footer-contacts-item a
@@ -125,7 +127,7 @@
     max-width: none
 
   .menu-link
-    padding: 20px 7px  
+    padding: 20px 7px
 
   .menu
     font-size: 13px
@@ -309,10 +311,14 @@
     .slick-next
       right: 12px
     .slick-prev
-      left: 12px 
+      left: 12px
 
   .home-slider-image__item
-    height: 350px  
+    height: 350px
+
+  .total-box
+    margin: 64px 0 48px
+
 @media only screen and (max-width: 992px)
   footer
     .logo
@@ -531,7 +537,7 @@
     opacity: 1
 
   .page-product
-    padding: 0  
+    padding: 0
 
   .accordion-body
     padding: 0 16px 16px 16px
@@ -542,7 +548,7 @@
     border-radius: 24px
     background: #EFF3F6
     &:last-child
-      margin: 0  
+      margin: 0
     .accordion-button
       border-radius: 24px
       background: #EFF3F6
@@ -553,12 +559,12 @@
       line-height: 24px
       font-family: 'Unbounded', sans-serif
     .accordion-button.collapsed:after
-      background: #fff url("../img/plus2.svg") no-repeat center  
+      background: #fff url("../img/plus2.svg") no-repeat center
       background-size: 32px
       border: 1px solid #afc7ce
-      
+
   .accordion-item:first-of-type .accordion-button, .accordion-item:first-child, .accordion-item:last-of-type .accordion-button.collapsed
-    border-radius: 24px      
+    border-radius: 24px
 
   .product-description-box
     padding: 16px
@@ -573,11 +579,43 @@
     &::before
       display: none
     p, span
-      padding: 0    
+      padding: 0
 
   .home-slider-item__img
     height: 700px
-    padding: 20px    
+    padding: 20px
+
+  .product-card-row
+    position: relative
+    z-index: 1
+    &__body
+      flex-wrap: wrap
+      width: 100%
+      padding: 16px
+      .box-text
+        font-size: 14px
+        line-height: 14px
+    &__img
+      position: absolute
+      width: 136px
+      height: 136px
+      min-width: 136px
+      left: 16px
+      top: 16px
+      border-radius: 16px
+      overflow: hidden
+      padding: 10px
+    &__text
+      width: 100%
+      padding: 0 0 0 152px
+      min-height: 136px
+    &__nav
+      margin: 16px 0 0
+      width: 100%
+
+  .amount
+    order: 1
+    margin: 0 0 0 auto    
 
 @media only screen and (max-width: 768px)
   h1, .h1
@@ -633,7 +671,6 @@
     height: 500px
     img
       max-height: 100%
-
 
 @media only screen and (max-width: 576px)
   h1, .h1
@@ -923,7 +960,17 @@
     margin: 0
 
   .home-slider-item__img
-    height: 400px  
+    height: 400px
+
+
+  .p-80
+    padding: 64px 0
+
+
+  .total-box
+    padding: 24px
+    &__sum
+      margin: 16px 0 0
 
 @media only screen and (max-width: 480px)
   .steps-order__content
@@ -959,7 +1006,7 @@
       line-height: 30px
 
   .home-slider-item__img
-    height: 330px    
+    height: 330px
 
 @media only screen and (max-width: 420px)
   header
@@ -1035,10 +1082,8 @@
 
   .btn-in-basket
     width: 100%
-    margin: 10px 0 0    
+    margin: 10px 0 0
 
-
-  
 @media only screen and (max-width: 370px)
   .mission-section
     h2, .h2
@@ -1085,5 +1130,31 @@
   .seo-content h2, .seo-content .h2
     font-size: 22px
 
+  .product-card-row
+    flex-direction: column
+    align-items: flex-start  
+
   .home-slider-item__img
     height: 250px
+
+  .product-card-row__img
+    width: 100%
+    min-width: auto
+    position: relative
+    left: 0
+    top: 0
+    height: auto
+
+
+  .product-card-row__text
+    padding: 0
+
+  .product-card-row__nav
+    flex-wrap: wrap
+
+  .amount
+    margin: 0 0 10px
+    order: 0
+    width: 100%
+
+

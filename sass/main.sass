@@ -19,7 +19,6 @@
   width: 100%
   height: 100%
 
-
 .home-content
   max-width: 620px
   width: 100%
@@ -36,6 +35,7 @@
       order: 1
       margin: 0
     .slick-dots
+      bottom: 0
       width: 100%
       margin: 0 32px
       display: flex
@@ -1056,7 +1056,7 @@
   background: $white
 
 .page-product-top
-  padding: 64px 0  
+  padding: 64px 0
 
 .nav-tabs
   width: 100%
@@ -1203,7 +1203,7 @@
       fill: $white
     &:focus
       background: $dark
-      opacity: 1  
+      opacity: 1
     .svg-icon
       transform: rotate(-90deg)
   .slick-prev
@@ -1211,7 +1211,6 @@
     top: auto
   .slick-next
     top: -20px
-    
 
 .product-gallery__item
   width: 100%
@@ -1240,15 +1239,15 @@
     align-items: flex-start
     margin: 0 0 32px
   .nav-breadcrumb
-    margin: 0  
+    margin: 0
     overflow: visible
   .breadcrumb
     flex-wrap: wrap
-    
+
   h1
     margin: 0 0 16px
   .box-text
-    color: $dark60  
+    color: $dark60
   h4
     margin: 0
   &__footer
@@ -1261,23 +1260,126 @@
     display: flex
     align-items: center
     flex-wrap: wrap
-    .box-text 
+    .box-text
       max-width: 180px
       color: $white
   &__nav
     display: flex
     align-items: center
-    margin: 0 0 0 auto  
+    margin: 0 0 0 auto
   .menu-navigation-link
     width: 52px
     height: 52px
     min-width: 52px
     border-radius: 50%
     margin: 0 16px 0 0
-    padding: 10px  
+    padding: 10px
     background: $white
     border: 1px solid $gray-stroke
     fill: $gray-stroke
     &:hover
       background: $accent
       fill: $white
+
+// basket page
+.total-box
+  width: 100%
+  background: $white
+  margin: 0 0 48px
+  border-radius: 14px
+  padding: 32px
+  font-size: 18px
+  line-height: 22px
+  p
+    letter-spacing: 0.6px
+  &__sum
+    margin: 16px 0 0
+
+.product-card-row
+  width: 100%
+  display: flex
+  align-items: stretch
+  border-radius: 32px
+  overflow: hidden
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+  &__img
+    @include d-flex
+    width: 200px
+    min-width: 200px
+    height: 194px
+    padding: 25px
+    background: $light-gray
+    img
+      max-height: 100%
+  &__body
+    background: $white
+    padding: 24px
+    width: calc( 100% - 200px )
+    display: flex
+    align-items: center
+    .box-text
+      margin: 12px 0
+      font-size: 18px
+      line-height: 22px
+  .price
+    color: $accent
+    font-size: 18px
+    line-height: 22px
+  &__name
+    color: $dark
+    &:hover
+      color: $accent
+  &__nav
+    display: flex
+    align-items: center
+    margin: 0 0 0 auto
+  .btn-link
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+    svg
+      margin: 0
+
+.amount
+  margin: 0 32px 0 0
+  display: flex
+  align-items: center
+  span
+    cursor: pointer
+    transition: .3s ease
+    width: 52px
+    height: 52px
+    min-width: 52px
+    border: 1px solid $dark
+    border-radius: 50%
+    @include d-flex
+    padding: 10px
+    &:hover
+      background: $accent
+      border-color: $accent
+      img
+        filter: brightness(0) invert(1)
+    &:focus
+      opacity: 0.3
+    &:disabled
+      background: $white
+      border-color: $gray-stroke
+      filter: grayscale(1)
+  input
+    width: 56px
+    min-width: 56px
+    text-align: center
+    border: none
+    border-radius: 0
+    padding: 0 5px
+    background: transparent
+    color: $dark
+    font-size: 24px
+    line-height: 28px
+    font-family: $title-font
+
+.form-basket
+  h4
+    margin: 0 0 24px

@@ -36,6 +36,7 @@
   margin: 0;
 }
 .home-slider-arrows .slick-dots {
+  bottom: 0;
   width: 100%;
   margin: 0 32px;
   display: flex;
@@ -1504,4 +1505,133 @@
 .product-content .menu-navigation-link:hover {
   background: #6ac1ef;
   fill: #fff;
+}
+
+.total-box {
+  width: 100%;
+  background: #fff;
+  margin: 0 0 48px;
+  border-radius: 14px;
+  padding: 32px;
+  font-size: 18px;
+  line-height: 22px;
+}
+.total-box p {
+  letter-spacing: 0.6px;
+}
+.total-box__sum {
+  margin: 16px 0 0;
+}
+
+.product-card-row {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  border-radius: 32px;
+  overflow: hidden;
+  margin: 0 0 24px;
+}
+.product-card-row:last-child {
+  margin: 0;
+}
+.product-card-row__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  min-width: 200px;
+  height: 194px;
+  padding: 25px;
+  background: #eff3f6;
+}
+.product-card-row__img img {
+  max-height: 100%;
+}
+.product-card-row__body {
+  background: #fff;
+  padding: 24px;
+  width: calc(100% - 200px);
+  display: flex;
+  align-items: center;
+}
+.product-card-row__body .box-text {
+  margin: 12px 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+.product-card-row .price {
+  color: #6ac1ef;
+  font-size: 18px;
+  line-height: 22px;
+}
+.product-card-row__name {
+  color: #192939;
+}
+.product-card-row__name:hover {
+  color: #6ac1ef;
+}
+.product-card-row__nav {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
+}
+.product-card-row .btn-link {
+  margin: 0 16px 0 0;
+}
+.product-card-row .btn-link:last-child {
+  margin: 0;
+}
+.product-card-row .btn-link svg {
+  margin: 0;
+}
+
+.amount {
+  margin: 0 32px 0 0;
+  display: flex;
+  align-items: center;
+}
+.amount span {
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border: 1px solid #192939;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.amount span:hover {
+  background: #6ac1ef;
+  border-color: #6ac1ef;
+}
+.amount span:hover img {
+  filter: brightness(0) invert(1);
+}
+.amount span:focus {
+  opacity: 0.3;
+}
+.amount span:disabled {
+  background: #fff;
+  border-color: #afc7ce;
+  filter: grayscale(1);
+}
+.amount input {
+  width: 56px;
+  min-width: 56px;
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  padding: 0 5px;
+  background: transparent;
+  color: #192939;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Unbounded", sans-serif;
+}
+
+.form-basket h4 {
+  margin: 0 0 24px;
 }
