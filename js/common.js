@@ -302,3 +302,42 @@ $('.up').on("click", function () {
 $('.amount input').on('input', function () {
   $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
+
+$('.btn-toggle-documents').on('click', function(e){
+e.preventDefault();
+$(this).toggleClass('click');
+$('footer .menu-documents').fadeToggle();
+});
+
+// hidden list > 2
+$('.products-category-box').each(function () {
+  if ($(this).find('.products-category__link').length > 2) {
+    $(this).find('.products-category__link').slice(2).hide();
+    $(this).append('<a href="#" class="btn btn-border btn-toggler-category w-100"><span>показать еще</span><svg class="svg-icon btn-icon"><use xlink:href="img/sprite.svg#arrow-bottom"></use></svg></a>');
+  }
+});
+
+// hidden list > 5
+
+// show list all
+$('.btn-toggler-category').on('click', function (e) {
+  e.preventDefault();
+
+  var
+    $this = $(this),
+    content = $(this).parent('.products-category-box').find('.products-category__link');
+
+
+  if (!$this.hasClass('trigger')) {
+    $this.addClass('trigger');
+    $this.find('span').html('Скрыть');
+
+    content.fadeIn();
+  } else {
+    $this.removeClass('trigger');
+    $this.find('span').html('Показать ещё');
+
+    content.slice(2).hide();
+  }
+});
+// show list all

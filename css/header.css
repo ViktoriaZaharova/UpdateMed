@@ -5,8 +5,12 @@ header {
 }
 
 .header-top {
-  padding: 16px 0;
+  padding: 21px 0;
   background: #fff;
+}
+
+.nav-menu-user {
+  margin: 0 auto 0 0;
 }
 
 .menu-user {
@@ -33,7 +37,7 @@ header {
 .menu-navigation {
   display: flex;
   align-items: center;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 80px;
 }
 .menu-navigation li {
   margin: 0 34px 0 0;
@@ -81,7 +85,7 @@ header {
 
 .header-center {
   background: #eff3f6;
-  padding: 21px 0;
+  padding: 24px 0;
   border-radius: 20px 20px 0 0;
 }
 
@@ -131,7 +135,7 @@ header {
   font-size: 32px;
   font-weight: bold;
   color: #192939;
-  margin: 0 16px 0 0;
+  margin: 0 0 0 16px;
 }
 .phone-link:hover {
   color: #6ac1ef;
@@ -156,7 +160,9 @@ header {
 }
 
 .nav-menu {
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
 }
 
 .menu {
@@ -169,13 +175,60 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.2px;
 }
+.menu li {
+  margin: 0 16px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu .dropdown-toggle {
+  padding: 0 12px 0 24px;
+  display: flex;
+  align-items: center;
+  border-radius: 32px;
+}
+.menu .dropdown-toggle:hover {
+  background: #fff;
+  color: #192939;
+}
+.menu .dropdown-toggle.show {
+  background: #fff;
+  color: #192939;
+}
+.menu .dropdown-toggle:after {
+  background: url("../img/arrow-bottom.svg") no-repeat center;
+  background-size: 100%;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  margin: 0;
+  border: none;
+}
+.menu .dropdown-menu {
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  margin: 0;
+}
+.menu .dropdown-menu__link {
+  border-radius: 8px;
+  padding: 6px 11px;
+  margin: 0 0 8px;
+}
+.menu .dropdown-menu__link:last-child {
+  margin: 0;
+}
+.menu .dropdown-menu__link:hover, .menu .dropdown-menu__link:focus, .menu .dropdown-menu__link.active {
+  color: #192939;
+  background: #eff3f6;
+}
 
 .menu-item {
   flex: auto;
 }
 
 .menu-link {
-  padding: 20px 24px;
+  padding: 15px 24px;
   color: #192939;
 }
 .menu-link:hover, .menu-link.active {
@@ -190,7 +243,6 @@ header {
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
-  margin: 0 0 0 auto;
   display: none;
 }
 .btn-burger .svg-icon-close {
@@ -291,4 +343,17 @@ header {
 .mobile-menu .mail-link {
   margin: 0 auto;
   color: rgba(25, 41, 57, 0.8);
+}
+
+.btn-call {
+  border-radius: 50%;
+  padding: 10px;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 16px 0 auto;
+  fill: #192939;
 }

@@ -144,3 +144,41 @@ footer .box-information p:last-child {
 .footer-contacts-item a:hover {
   color: #7cc1e5;
 }
+
+.btn-toggle-documents {
+  border-radius: 16px;
+  border-color: #eff3f6;
+  color: #fff;
+  font-size: 18px;
+  padding: 16px;
+  font-family: "Unbounded", sans-serif;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 448px;
+  fill: #fff;
+  margin: 48px auto 0;
+}
+.btn-toggle-documents:after {
+  content: "";
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  padding: 10px;
+  background: url("../img/plus-white.svg") no-repeat center;
+  background-size: 32px;
+}
+.btn-toggle-documents:hover, .btn-toggle-documents:focus {
+  background: transparent;
+  color: #fff;
+}
+.btn-toggle-documents.click:after {
+  background: url("../img/minus-white.svg") no-repeat center;
+  background-size: 32px;
+}

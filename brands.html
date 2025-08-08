@@ -202,13 +202,31 @@
             </div>
 
             <div class="title-wrapper__button">
-              <a href="brands.html" class="btn btn-dark btn-border-gray-stroke">
-                <span class="btn-text">К выбору по разделам</span>
-                <span class="btn-icon-arrow"><svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              <div class="dropdown dropdown-sorting"><a href="#"
+                  class="dropdown-toggle btn btn-dark btn-border-gray-stroke" data-bs-toggle="dropdown">
+                по бренду
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#filter-icon"></use>
                   </svg>
-                </span>
-              </a>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu__head">
+                    <h3 class="h2">Фильтр товаров</h3>
+                    <a href="#" class="dropdown-menu__close btn btn-border"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#close-icon"></use>
+                    </svg></a>
+                  </div>
+                  <div class="dropdown-menu__body">
+                    <ul class="menu-sorting my-ul">
+                      <li><a href="#">все товары</a></li>
+                      <li><a href="#">по бренду</a></li>
+                      <li><a href="#" class="active">по процедуре</a></li>
+                      <li><a href="#">по технологии</a></li>
+                      <li><a href="#">по области применения</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

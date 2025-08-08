@@ -673,6 +673,10 @@ ul, ol {
   padding: 24px 0;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
 }
@@ -851,7 +855,7 @@ h4, .h4 {
   margin: 0;
 }
 .title-wrapper__button {
-  margin-left: auto;
+  margin: auto 0 0 auto;
 }
 
 .page-home {
@@ -1183,8 +1187,9 @@ h4, .h4 {
   width: 100%;
   margin: 8px 0 0;
   background: #fff;
-  border-radius: 28px;
-  border: none;
+  border-radius: 16px;
+  border: 1px solid #e4ecf3;
+  padding: 12px;
   font-size: 18px;
   line-height: 22px;
   overflow: hidden;

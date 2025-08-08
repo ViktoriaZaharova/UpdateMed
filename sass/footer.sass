@@ -16,7 +16,7 @@ footer
     p
       margin: 0 0 10px
       &:last-child
-        margin: 0  
+        margin: 0
 
 .list-messengers
   display: flex
@@ -38,7 +38,7 @@ footer
         fill: #fff
       &:focus
         background: $gray
-        fill: $dark  
+        fill: $dark
       &:disabled
         opacity: 0.5
         fill: #fff
@@ -52,9 +52,6 @@ footer
     margin: 0 0 24px
     &:last-child
       margin: 0
-    
-
-
 
 .footer-column
   max-width: 353px
@@ -71,7 +68,7 @@ footer
       margin: 0
   &__link
     text-decoration: underline
-    color: $accent  
+    color: $accent
     &:hover, &:focus
       color: #fff
       text-decoration: none
@@ -86,7 +83,7 @@ footer
   &__link
     color: $white
     &:hover, &:focus
-      color: $accent    
+      color: $accent
 
 .footer-contacts
   margin: 0 auto
@@ -103,7 +100,7 @@ footer
     margin: 0 0 4px
   p
     letter-spacing: 2%
-    font-weight: bold  
+    font-weight: bold
   a
     color: #fff
     font-family: $font
@@ -114,4 +111,37 @@ footer
     span
       color: $accent
     &:hover
-      color: $accent-second   
+      color: $accent-second
+
+.btn-toggle-documents
+  border-radius: 16px
+  border-color: $light-gray
+  color: #fff
+  font-size: 18px
+  padding: 16px
+  font-family: 'Unbounded', sans-serif
+  display: none
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  max-width: 448px
+  fill: #fff
+  margin: 48px auto 0
+  &:after
+    content: ''
+    border: 1px solid #fff
+    border-radius: 50%
+    @include d-flex
+    width: 52px
+    height: 52px
+    min-width: 52px
+    padding: 10px
+    background: url('../img/plus-white.svg') no-repeat center
+    background-size: 32px
+  &:hover, &:focus
+    background: transparent
+    color: #fff
+  &.click
+    &:after
+      background: url('../img/minus-white.svg') no-repeat center
+      background-size: 32px

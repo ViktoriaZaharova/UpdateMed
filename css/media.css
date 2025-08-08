@@ -2,7 +2,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1820px) {
   .menu-link {
-    padding: 20px 15px;
+    padding: 15px 12px;
   }
   .home-slider-image__item {
     padding: 20px;
@@ -10,6 +10,15 @@
   }
   .home-slider-image__item img {
     max-height: 100%;
+  }
+  .menu li {
+    margin: 0;
+  }
+  .menu-navigation {
+    margin: 0 0 0 20px;
+  }
+  .mail-link {
+    margin: 0 20px 0 0;
   }
 }
 @media only screen and (max-width: 1700px) {
@@ -19,22 +28,30 @@
   .product-card-row__img {
     height: auto;
   }
-}
-@media only screen and (max-width: 1550px) {
   .form-search {
     max-width: 350px;
   }
+}
+@media only screen and (max-width: 1550px) {
+  .header-center {
+    padding: 20px 0;
+  }
+  .form-search {
+    max-width: 300px;
+  }
   .phone-link {
-    font-size: 28px;
+    font-size: 24px;
   }
   .mail-link {
-    margin: 0 24px 0 0;
+    margin: 0 16px 0 0;
   }
   .menu-link {
     padding: 14px 10px;
   }
-  .menu {
-    font-size: 16px;
+  .menu .dropdown-toggle:after {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
   }
   .article-title {
     padding: 0;
@@ -45,11 +62,17 @@
   .menu {
     font-size: 14px;
   }
-  .menu-link {
-    padding: 20px 10px;
-  }
   .home-slider-image__item {
     height: 500px;
+  }
+  .menu-user li, .menu-navigation li {
+    margin: 0 15px 0 0;
+  }
+  .menu-user li:last-child, .menu-navigation li:last-child {
+    margin: 0;
+  }
+  header .logo {
+    max-width: 220px;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -135,11 +158,14 @@
     margin: 24px 0 0;
     max-width: none;
   }
-  .menu-link {
-    padding: 20px 7px;
-  }
   .menu {
     font-size: 13px;
+  }
+  .menu .dropdown-toggle {
+    padding: 0 12px;
+  }
+  header .link-callback {
+    display: none;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -173,7 +199,7 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin: 64px 0 0;
+    margin: 48px 0 0;
   }
   .footer-contacts-item {
     margin: 0 auto 0 0;
@@ -186,7 +212,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 64px auto 0;
+    margin: 48px auto 0;
   }
   .list-messengers-column li {
     margin: 0 24px 0 0;
@@ -284,10 +310,10 @@
   .btn-group .btn:last-child {
     margin: 0;
   }
-  .header-bottom, .header-top {
+  .header-bottom, .header-top, .header-center .nav-menu {
     display: none;
   }
-  .btn-burger {
+  .btn-burger, .btn-call {
     display: flex;
   }
   .header-center {
@@ -295,6 +321,35 @@
   }
   .header-center .form-search, .header-center .mail-link, .header-center .phone-link, .header-center .link-callback {
     display: none;
+  }
+  .mobile-menu .menu li a {
+    background: transparent;
+  }
+  .mobile-menu .menu li a.dropdown-toggle, .mobile-menu .menu li a.active, .mobile-menu .menu li a:hover {
+    background: #eff3f6;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .menu {
+    font-size: 18px;
+  }
+  .menu .dropdown-toggle:after {
+    margin: 0 0 0 auto;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+  }
+  .menu .dropdown-menu {
+    position: relative !important;
+    width: 100% !important;
+    transform: none !important;
+  }
+  .menu .dropdown-toggle.show {
+    background: #eff3f6;
+  }
+  .mobile-menu .menu .dropdown-toggle {
+    padding: 16px 24px;
   }
   .page-article {
     padding: 16px 0 0;
@@ -308,6 +363,7 @@
   .product-content__footer {
     margin: 24px 0;
     order: -1;
+    flex-wrap: wrap;
   }
   .product-content {
     margin: 24px 0 0;
@@ -348,10 +404,24 @@
   .total-box {
     margin: 64px 0 48px;
   }
+  .advantages-box {
+    text-align: center;
+    align-items: center;
+  }
+  .advantages-box__icon {
+    margin: 0 auto 12px;
+    width: 78px;
+    height: 78px;
+    min-width: 78px;
+    padding: 15px;
+  }
+  .advantages-box .box-text {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 992px) {
   footer .logo {
-    margin: 0 auto 64px;
+    margin: 0 auto 48px;
     max-width: 353px;
   }
   .menu-footer {
@@ -374,7 +444,7 @@
     max-width: none;
   }
   .footer-contacts {
-    margin: 64px auto 0;
+    margin: 48px auto 0;
     width: 100%;
     text-align: center;
     flex-direction: column;
@@ -401,7 +471,24 @@
   .menu-documents {
     order: 1;
     text-align: center;
-    margin: 64px auto 0;
+    margin: -10px auto 0;
+    padding: 34px 5px 32px;
+    display: none;
+    max-width: 448px;
+    justify-content: center;
+    border: 1px solid #eff3f6;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+  }
+  .menu-documents li {
+    max-width: 300px;
+    margin: 0 auto 24px;
+  }
+  .menu-documents li:last-child {
+    margin: 0 auto;
+  }
+  .btn-toggle-documents {
+    display: flex;
   }
   .steps-order__content {
     padding: 64px 16px;
@@ -594,6 +681,9 @@
   .accordion-item.tab-pane:last-child {
     margin: 0;
   }
+  .accordion-item.tab-pane:first-child {
+    border-radius: 24px;
+  }
   .accordion-item.tab-pane .accordion-button {
     border-radius: 24px;
     background: #EFF3F6;
@@ -614,6 +704,9 @@
   }
   .product-description-box {
     padding: 16px;
+    margin: 0 0 16px;
+  }
+  .product-description-box:last-child {
     margin: 0 0 16px;
   }
   .list-characteristics li {
@@ -696,6 +789,25 @@
   .comparison-products-slider .slick-slide {
     width: auto;
   }
+  .advantages-section {
+    margin: 64px 0 48px;
+  }
+  .products-category-box {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+  .products-category-box h3 {
+    margin: 0 0 24px;
+  }
+  .products-category__link {
+    margin: 0 0 12px;
+  }
+  .products-category__link:last-child {
+    margin: 0;
+  }
+  .products-category {
+    margin: 0 0 48px;
+  }
 }
 @media only screen and (max-width: 768px) {
   h1, .h1 {
@@ -751,6 +863,42 @@
   }
   .home-slider-item__img img {
     max-height: 100%;
+  }
+  .product-content__footer .price {
+    width: 100%;
+  }
+  .product-content__nav {
+    margin: 16px 0 0;
+  }
+  .dropdown-sorting .dropdown-menu {
+    position: fixed !important;
+    min-width: auto;
+    left: 0 !important;
+    top: 0 !important;
+    background: #eff3f6;
+    height: 100%;
+  }
+  .dropdown-sorting .dropdown-menu__head {
+    display: flex;
+  }
+  .dropdown-sorting .dropdown-menu__body {
+    background: #fff;
+    border-radius: 24px;
+  }
+  .menu-sorting {
+    padding: 16px;
+    border-radius: 24px;
+    border: 1px solid #e4ecf3;
+  }
+  .menu-sorting li {
+    margin: 0 0 16px;
+  }
+  .menu-sorting li:last-child {
+    margin: 0;
+  }
+  .menu-sorting li a {
+    border: 1px solid #e4ecf3;
+    padding: 13px 24px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -888,9 +1036,6 @@
     padding: 24px;
     border-radius: 24px;
     text-align: center;
-  }
-  .advantages-box__icon {
-    margin: 0 auto 16px;
   }
   .advantages-box::after {
     top: 24px;
@@ -1077,6 +1222,9 @@
   .comparison-characteristics-slider__item {
     width: 260px;
   }
+  .product-gallery-max .product-gallery__item {
+    height: 448px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .steps-order__content {
@@ -1150,12 +1298,6 @@
   .advantages-box {
     font-size: 14px;
   }
-  .advantages-box__icon {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    padding: 20px;
-  }
   .advantages-box .box-text {
     font-size: 14px;
     line-height: normal;
@@ -1186,11 +1328,15 @@
     margin: 0 0 0 10px;
   }
   .product-content__nav {
-    flex-wrap: wrap;
+    width: 100%;
   }
   .btn-in-basket {
     width: 100%;
-    margin: 10px 0 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  header .logo {
+    max-width: 200px;
   }
 }
 @media only screen and (max-width: 370px) {
@@ -1208,11 +1354,6 @@
   }
   .advantages-box .box-text {
     font-size: 12px;
-  }
-  .advantages-box__icon {
-    width: 80px;
-    height: 80px;
-    min-width: 80px;
   }
   .box-text {
     font-size: 16px;
@@ -1266,5 +1407,34 @@
     margin: 0 0 10px;
     order: 0;
     width: 100%;
+  }
+  .product-content__nav {
+    flex-wrap: wrap;
+  }
+  .btn-in-basket {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .btn-call, .btn-burger {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+  }
+  .btn-call {
+    margin: 0 10px 0 auto;
+  }
+  header .logo {
+    max-width: 180px;
+  }
+  .menu {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .menu .dropdown:hover .dropdown-toggle {
+    background: #fff;
+  }
+  .menu .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
