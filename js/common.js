@@ -50,7 +50,7 @@ $('.link-load-more').on('click', function (e) {
   var
     $this = $(this),
     content = $(this).parents('.reviews-card').find('.box-text'),
-    content2 = $(this).parent('.page-brand');
+    content2 = $(this).parents('.page-brand').find('.brand-text-description');
 
   if (!$this.hasClass('trigger')) {
     $this.addClass('trigger');

@@ -1268,6 +1268,7 @@
 
 .page-category .box-text {
   max-width: 522px;
+  color: rgba(25, 41, 57, 0.8);
 }
 .page-category .blog-page-description {
   max-width: 522px;
@@ -1276,17 +1277,18 @@
 .page-category .wrapper-bg {
   position: relative;
   z-index: 1;
+  background: #eff3f6;
 }
 .page-category .wrapper-bg::before {
   content: "";
   position: absolute;
   z-index: -1;
-  right: 193px;
-  top: 0;
-  background: url("../img/category-home-img.png") no-repeat center;
+  left: 0;
+  bottom: 0;
+  background: url("../img/category-text-overlay.svg") no-repeat center;
   background-size: cover;
-  width: 934px;
-  height: 100%;
+  width: 977px;
+  height: 88px;
 }
 
 .btn-group-filter {
@@ -1404,11 +1406,12 @@
 }
 
 .accordion-body {
+  opacity: 1;
+}
+
+.page-product-characteristics .accordion-body {
   padding: 0 12px;
   color: rgba(25, 41, 57, 0.8);
-  opacity: 1;
-  font-size: 18px;
-  line-height: 22px;
 }
 
 .product-description-box {

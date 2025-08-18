@@ -3,7 +3,7 @@
 // home section
 .home
   padding: 24px 0 0
-    
+
 .home-slider-image
   max-width: 1044px
   margin: 0 auto
@@ -1015,21 +1015,20 @@
     opacity: 0.4
     fill: #192939
     margin: 0 0 0 8px
-  
+
   .dropdown-toggle
     padding: 10px 24px 10px 32px
     &:after
-      display: none    
+      display: none
     &:hover
       svg
         fill: #fff
-        opacity: 1   
+        opacity: 1
     &.show
       color: #fff
       svg
         fill: #fff
         opacity: 1
-      
 
   .dropdown-menu
     padding: 0
@@ -1058,14 +1057,13 @@
       width: 52px
       height: 52px
       min-width: 52px
-      background: transparent  
+      background: transparent
       padding: 10px
       svg
-        fill: $dark  
+        fill: $dark
         opacity: 1
         margin: 0
 
-                   
 .menu-sorting
   width: 100%
   text-transform: uppercase
@@ -1084,30 +1082,30 @@
         color: $dark
       &:hover
         color: $dark
-        background: $accent  
-
-
+        background: $accent
 
 // page-category
 .page-category
   .box-text
     max-width: 522px
+    color: $dark60
   .blog-page-description
     max-width: 522px
     margin: 24px 0 0
   .wrapper-bg
     position: relative
     z-index: 1
+    background: #eff3f6
     &::before
       content: ''
       position: absolute
       z-index: -1
-      right: 193px
-      top: 0
-      background: url('../img/category-home-img.png') no-repeat center
+      left: 0
+      bottom: 0
+      background: url('../img/category-text-overlay.svg') no-repeat center
       background-size: cover
-      width: 934px
-      height: 100%
+      width: 977px
+      height: 88px
 
 .btn-group-filter
   justify-content: flex-end
@@ -1205,11 +1203,13 @@
     border-radius: 0 24px 24px 24px
 
 .accordion-body
-  padding: 0 12px
-  color: rgba(#192939, .8)
   opacity: 1
-  font-size: 18px
-  line-height: 22px
+  
+
+.page-product-characteristics
+  .accordion-body
+    padding: 0 12px
+    color: rgba(#192939, .8)
 
 .product-description-box
   width: 100%
@@ -1470,7 +1470,7 @@
 
 // page-comparison
 .page-comparison
-  overflow: hidden     
+  overflow: hidden
 
 .comparison-products-slider
   // padding: 0 0 0 354px
@@ -1491,12 +1491,12 @@
   margin: 0 0 16px
   &:last-child
     margin: 0
-  
+
 .comparison-characteristics__name
   width: 100%
   font-size: 18px
   margin: 0 0 12px
-  display: none        
+  display: none
 
 .comparison-list-characteristics
   li
@@ -1506,16 +1506,15 @@
     &:last-child
       margin: 0
 
-
 .comparison-characteristics-slider__item
-  width: 354px  
+  width: 354px
   padding: 16px
   p
     text-align: center
     margin: 0
 
 .comparison-characteristics-slider__item-title
-  text-align: left    
+  text-align: left
 
 .comparison-characteristics
   min-width: 1873px
@@ -1562,4 +1561,4 @@
     fill: $accent
     border-radius: 50%
     padding: 5px
-    @include d-flex        
+    @include d-flex
