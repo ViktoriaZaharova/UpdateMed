@@ -1269,10 +1269,12 @@
 .page-category .box-text {
   max-width: 522px;
   color: rgba(25, 41, 57, 0.8);
+  margin-left: auto;
 }
 .page-category .blog-page-description {
   max-width: 522px;
-  margin: 24px 0 0;
+  margin: 24px 0 0 auto;
+  font-size: 18px;
 }
 .page-category .wrapper-bg {
   position: relative;
