@@ -145,3 +145,62 @@ footer
     &:after
       background: url('../img/minus-white.svg') no-repeat center
       background-size: 32px
+
+// modal
+.modal-dialog
+  max-width: 756px
+  width: 100%
+  .form-callback
+    max-width: none
+    margin: 0
+  .btn-close
+    padding: 10px
+    margin: 0
+    position: absolute
+    z-index: 1
+    right: 0
+    top: 0
+    border-radius: 50%
+    border: 1px solid #192939
+    opacity: 1
+    width: 52px
+    height: 52px
+    box-sizing: border-box
+    background: transparent
+    fill: #192939
+    &:hover
+      background: $accent
+      fill: #fff
+
+
+.modal-content
+  background: #E4ECF3
+  border: none
+  border-radius: 25px
+  padding: 80px  
+
+.modal-header
+  flex-wrap: wrap
+  position: relative
+  z-index: 1
+  padding: 0
+  border: none
+  border-radius: 0
+
+
+.modal-body
+  width: 100%
+  padding: 0
+  margin: 24px 0 0
+
+.modal-title
+  margin: 0 0 10px 
+  padding: 0 64px 0 0
+
+.form-footer
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  .label-checkbox
+    margin: 0 16px 0 0   

@@ -893,6 +893,9 @@
     border: 1px solid #e4ecf3;
     padding: 13px 24px;
   }
+  .modal-content {
+    padding: 32px;
+  }
 }
 @media only screen and (max-width: 576px) {
   h1, .h1 {
@@ -1217,6 +1220,13 @@
   }
   .product-gallery-max .product-gallery__item {
     height: 448px;
+  }
+  .form-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-footer .label-checkbox {
+    margin: 0 0 16px;
   }
 }
 @media only screen and (max-width: 480px) {

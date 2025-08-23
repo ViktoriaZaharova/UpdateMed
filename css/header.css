@@ -336,6 +336,7 @@ header {
 }
 .mobile-menu .link-callback {
   margin: 0 auto;
+  display: block;
 }
 .mobile-menu .phone-link {
   margin: 24px auto 16px;
