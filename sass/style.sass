@@ -178,7 +178,7 @@ button, .btn
 
 .btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn
   margin-left: 0
-  border-radius: 32px  
+  border-radius: 32px
 
 .btn-icon
   @include d-flex
@@ -217,6 +217,7 @@ button, .btn
   &:focus
     background: transparent
     color: $white
+    border-color: $accent
     .btn-text
       background: $accent
       border-radius: 32px
@@ -406,11 +407,18 @@ button, .btn
   &:focus
     background: $dark
     border-color: $dark
+    
     fill: $white
   &:disabled
     opacity: 0.3
     fill: $accent
     border-color: $accent
+
+.btn-add-favorite.active
+  &:focus
+    border: 1px solid $accent
+    fill: $accent
+    background: transparent
 
 .btn-link-border-gray-stroke
   background: $white
@@ -586,7 +594,7 @@ h4, .h4
 
 .box-text-small
   font-size: 14px
-  line-height: 14px      
+  line-height: 14px
 
 .box-text-big
   font-size: 32px
@@ -767,7 +775,7 @@ h4, .h4
       background-size: 32px
 
 .accordion-button:not(.collapsed)
-  color: $dark      
+  color: $dark
 
 .accordion-button:not(.collapsed)::after
   background: $gray url('../img/minus.svg') no-repeat center
@@ -862,7 +870,6 @@ h4, .h4
       margin: 0
     button
       display: none
-
 
 .select-my
   width: fit-content

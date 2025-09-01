@@ -308,6 +308,7 @@ button:hover, button:focus, .btn:hover, .btn:focus {
 .btn-dark:focus {
   background: transparent;
   color: #fff;
+  border-color: #6ac1ef;
 }
 .btn-dark:focus .btn-text {
   background: #6ac1ef;
@@ -557,6 +558,12 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   opacity: 0.3;
   fill: #6ac1ef;
   border-color: #6ac1ef;
+}
+
+.btn-add-favorite.active:focus {
+  border: 1px solid #6ac1ef;
+  fill: #6ac1ef;
+  background: transparent;
 }
 
 .btn-link-border-gray-stroke {
